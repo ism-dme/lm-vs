@@ -1,0 +1,6 @@
+*.log
+*.pdf
+*.count
+*-systems.tex
+*-systems.texi
+*.eps
