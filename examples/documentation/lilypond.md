@@ -55,7 +55,7 @@ LilyPond installation packages for Windows and Mac (and Linux if the version
 included in the distribution repository is not new enough) can be downloaded
 from <http://lilypond.org/development.html>.
 
-### openLilyLib
+## openLilyLib
 
 [*openLilyLib*](https://github.com/openlilylib) is a powerful extension infrastructure for LilyPond, and the Mozart project makes heavy use of its functionality. Current versions of a number of packages have to be installed and used for the examples to compile.^[General information about setting up *openLilyLib* can be found at the [Wiki page(https://github.com/openlilylib/oll-core/wiki)]]. The following packages (names and Git URLs, alternatively the Github repositories below <https://github.com/openlilylib> provide downloadable archives):
 
@@ -70,7 +70,7 @@ change the above URLs accordingly.
 
 **TODO:** Clarify if there still is a file `openlilylib-root` to be inserted!
 
-### Fonts
+## Fonts
 
 The edition uses the *Ross* notation font that can be obtained from
 <https://musictypefoundry.com> and that has to be installed explicitly for each
@@ -80,40 +80,31 @@ process.
 
 **TODO:** Text fonts
 
-# Dateiorganisation
+# File Organization Overview
 
-Zunächst eine Beschreibung der Datei-Organisation, bevor später die Unterstützung in Frescobaldi beschrieben wird.
+The music examples are contained in the repository's `examples` directory. This
+contains `documentation`, `library`, and `editions` subdirectories. `library`
+contains the project-specific LilyPond fucntionality, while `editions` includes
+one `.json` file for each edition and a corresponding subdirectory where the
+LilyPond data for the corresponding edition is located.
 
-### guidelines
+## Editions
 
-Dieses Verzeichnis enthält die Editionsrichtlinien sowie die Dokumentation.
+The content of each edition is documented in a file `<edition>.json` whose
+structure is described in the complementary `structure.md/pdf`, the examples
+themselves are encoded in a corresponding subdirectory, e.g.
+`examples/edition/1756`.
 
-### vorlage
+In the edition directory there is/will be one file `<edition>_<page>_<index>.ly`
+for each example, plus an optional file `<edition>_<page>_<index>-include.ily`.
+The `.ly` file is used to encode the actual edition content which will be copied
+verbatim into the \textsc{tei} file,while the optional `-include.ily` can be
+used to define layout settings, load tools or apply specific rendering hints.
+The integration of the include file is done markup-less as soon as it is present
+on disk. For more on the use of the include file see later sections.
 
-In diesem Verzeichnis liegen sowohl die Originaldrucke als auch Template-Dateien
-zur Verwendung in Skripts und Werkzeugen.
 
-`vorlage-seitenkorrekt.pdf` ist eine Version des Originaldrucks, in der
-ausschließlich die nummerierten Seiten des Drucks übernommen sind, und zwar so,
-dass die PDF-Seitennummer mit der gedruckten Seitenzahl übereinstimmt.
-
-`beispiel-liste` wird von Frescobaldi benutzt, um den Projektfortschritt zu
-dokumentieren. Diese Datei darf (i.d.R.) nicht manuell bearbeitet werden.
-
-`ein-system.ly`, `zwei-systeme.ly` und `include.ly` sind Templates, aus denen
-Frescobaldi neue Dateien für die Eingabe weiterer Beispiele erzeugt.
-
-### Hauptverzeichnis
-
-Im Hauptverzeichnis liegen für jedes eingegebene Beispiel eine Datei
-`1756_NNN_N.ly` sowie optional eine Datei `1756_NNN_N-includes.ily`. Die
-`.ly`-Datei enthält die reinen Inhaltsdaten, die verbatim in das TEI kopiert
-werden sollen, die `-includes.ily`-Datei hingegen sämtliche
-Darstellungsparameter in Form allgemeiner Layout-Overrides oder spezifischer
-Tweaks.
-
-Die Integration der Include-Datei erfolgt markup-los: Wenn eine zur Hauptdatei
-passende Include-Datei vorliegt, wird sie implizit geladen.
+**TODO:** Was damit tun? Muss das nicht sowieso noch verändert werden?
 
 Zusätzlich liegt am Ende des Hauptverzeichnisses die Datei `config.ily`. In
 dieser werden Optionen der Darstellungskonfiguration gesetzt (etwa der Umgang
@@ -125,7 +116,7 @@ Optionenwerte sollten nach Möglichkeit nicht committet werden.
 Es ist noch nicht endgültig geklärt, inwieweit Frescobaldi ein GUI für diese
 Konfiguration bereitstellen wird.
 
-### library
+## Library
 
 Dieses Verzeichnis beinhaltet die Interne Infrastruktur.
 
@@ -161,136 +152,8 @@ lediglich den Basisnamen des Tools erwartet:
 lädt beispielsweise die Datei `toolbox/non-ragged.ily`. Die verfügbaren
 Funktionen werden weiter unten dokumentiert.
 
-# Arbeitsumgebung (Frescobaldi)
 
-Wird *Frescobaldi* von seinem Git-Repository und auf dem Zweig `mozart` vom
-Remote `github.com:ism-dme/frescobaldi` gestartet, stehen spezielle Werkzeuge
-zur Verwaltung des Projekts zur Verfügung. Diese sind über das Panel
-`Tools=>Mozart` verfügbar, das dauerhaft geöffnet sein kann
-
-## Vorbereitungen
-
-### Panels
-
-Es bietet sich an, das »Mozart-Panel« gemeinsam mit dem LogViewer (Default:
-unter dem Text-Editor) oder dem Manuskript-Viewer (Default: rechts oben) in ein
-DockArea zu platzieren. Eine vernünftige Anordnung, in der das Mozart-Panel
-neben dem Manuskript-Viewer angeordnet ist, ist in der Abbildung zu sehen.
-
-![Arbeitsumgebung in Frescobaldi, mit synchronisiertem Manuskript und
-»Mozart-Panel«](cg-images/frescobaldi-mozart-tool-fullscreen.png)
-
-Zunächst sollte der Manuskript-Viewer geöffnet und in diesem die Datei
-`vorlage/vorlage-seitenkorrekt.pdf` geladen werden. Anschließend kann per
-Kontextmenü die Toolbar verborgen werden, um etwas Platz zu schaffen.
-
-
-### Pfade
-
-Sofern nicht bereits geschehen, muss in `Tools=>Preferences=>LilyPond
-Preferences` der Root-Pfad zu *openLilyLib* hinterlegt werden. Sinnvoll ist es
-auch, eine neue Sitzung über das Sitzungs-Menü anzulegen und dieser das
-Projektverzeichnis als Basis mitzugeben.
-
-Das Mozart-Panel hat zwei Tabs, »Beispiele« und »Konfiguration«. Im Letzteren
-muss das Projekt-Wurzelverzeichnis angegeben werden sowie ein
-Export-Verzeichnis, in welches die produzierten Partitur- (und Quelltext-)
-Dateien exportiert werden.
-
-
-## Arbeiten mit dem »Mozart«-Panel
-
-### Dokumentation des Bearbeitungsstands
-
-Der Reiter »Beispiele« dient der Navigation im Projekt, der Dokumentation des
-Projektfortschritts und der Synchronisation der verschiedenen Bestandteile der
-Projektumgebung.
-
-Kernstück ist eine Baumansicht aller Notenbeispiele des Bandes, organisiert
-entsprechend der originalen Kapitelstruktur. Kapitel und Unterkapitel können
-mittels der kleinen Dreiecke oder per Doppelklick erweitert oder geschlossen
-werden. Auf der unter(st)en Ebene werden dann die vorgegebenen Beispiele als
-Tabelle angezeigt, mehrere Checkboxen dokumentieren den Bearbeitungsstand.
-
-![Aufgeklapptes Kapitel mit Detaildaten](cg-images/panel-beispiele-übersicht.png)
-
-* `File`: eine `.ly`-Datei für das Beispiel ist vorhanden
-* `Inc.`: eine `-include.ily`-Datei ist vorhanden
-* `Eingabe`: Inhalte wurden bereits eingegeben
-* `Review`: Das Beispiel ist bereit zur Korrekturlesung
-* `Abgenommen`: Das Beispiel kann als abgeschlossen betrachtet werden
-
-Die Checkboxen `Eingabe`, `Review` und `Abgenommen` können angeklickt werden und
-ändern ihren Zustand. Implizite Ergänzungen werden automatisch vorgenommen
-(`Abgenommen` impliziert `Review` und dieses wiederum `Eingabe`). Diese
-Informationen werden in der Datei `vorlage/beispiel-liste` gespeichert, und
-Änderungen müssen entsprechend committet werden.
-
-Oberhalb der Liste befinden sich eine Reihe von Checkboxen, mit deren Hilfe die
-Auswahl gefiltert werden kann. Die Auswahl entspricht den Spalten der Übersicht,
-nur dass nicht zwischen Haupt- und Include-Datei differenziert wird. Die
-Checkboxen haben drei Zustände, mit denen der Parameter entweder ignoriert oder
-aber positiv oder negativ gefiltert werden kann. So kann gezielt gefiltert
-werden, etwa nach Beispielen, die bereits eingegeben aber noch nicht zum Review
-freigegeben sind. (In der oberen Zeile wird jeweils angezeigt wieviele Beispiele
-den Kriterien entsprechen.) Der Zustand der Checkboxen wird persistent
-gespeichert, bleibt also nach dem Schließen des Programms erhalten.
-
-![Filter-Einstellungen und Statistik](cg-images/panel-filter-einstellungen.png)
-
-### Navigation in den Beispielen
-
-Aus der Liste der Beispiele heraus können diese mit Hilfe des Kontextmenüs
-direkt im Text-Editor oder im Manuskript-Viewer geöffnet werden. Befehle zum
-Öffnen, exklusiven Öffnen (gleichzeitiges Schließen anderer Tabs) und Schließen
-sind aktiv, wenn das Beispiel zumindest eine Datei besitzt. Der Befehl `Zeige
-Manuskript` dagegen ist immer verfügbar und öffnet im Manuskript-Viewer die
-Seite mit dem entsprechenden Beispiel.
-
-![Kontextmenü der Beispiel-Liste](cg-images/liste-kontextmenü.png)
-
-Rechts oberhalb der Liste befinden sich weitere Steuerelemente, die der
-Navigation im Projekt dienen. Ist die Checkbox `Sync` ausgewählt, verhalten sich
-Editor-Tabs, Beispiel-Liste und Manuskript-Viewer (weitestgehend) synchron. So
-positioniert das Öffnen eines Beispiels im Editor den Manuskript-Viewer auf die
-entsprechende Seite, und ebenso synchronisiert sich der Manuskript-Viewer, wenn
-im Editor zwischen verschiedenen Tabs gewechselt wird. Mit den beiden Pfeilen
-neben der Checkbox kann man zum jeweils vorherigen oder nächsten *in der
-gefilterten Liste sichtbaren* Beispiel springen, welches »exklusiv« geöffnet
-wird.
-
-![Synchronisation und Navigation zwischen Beispielen](cg-images/panel-sync-nav.png)
-
-Die Funktion `Öffne in Editor (exklusiv)` wird auch ausgelöst, wenn auf den
-Eintrag eines Beispiels *doppelt* geklickt wird, für das mindestens eine Datei
-vorhanden ist.
-
-### Erstellen neuer Dateien
-
-Das Untermenü `Neu` des Kontextmenüs ermöglicht das schnelle Erzeugen neuer
-Dateien aus Templates. Die Einträge sind aktiv, in Abhängigkeit vom
-Vorhandensein der Dateien. Der Begriff »Datei« steht dabei für die Hauptdatei,
-wobei es Templates für Beispiele mit einem System pro Akkolade und solche mit
-zwei Systemen pro Akkolade gibt.
-
-Neu erstellte Dateien werden geöffnet und der Manuskript-Viewer entsprechend
-positioniert. Die Funktion `Beide Dateien (ein System)` wird auch durch
-doppeltes Klicken ausgelöst, wenn für das Beispiel noch *keine* Datei vorhanden
-ist.
-
-### Erzeugen der Beispiele
-
-\lyIssue{!}
-Für die Editionsarbeit werden Beispiele wie gewohnt mit Frescobaldis Bordmitteln
-kompiliert (`LilyPond=>Notensatz (Vorschau)`, Tastenkürzel `Ctrl-M`). Das
-»Mozart«-Panel wird jedoch spezifische Funktionalität bereitstellen, um die
-endgültige Ausgabe (Bilddateien in mehreren Formaten, aufbereitete Inhaltsdaten)
-zu erzeugen. Dies werden Funktionen sein, um das aktuelle oder alle Beispiele zu
-erzeugen, wobei nach Möglichkeit versucht wird, einen Caching-Mechanismus zu
-implementieren, um unnötige Rekompilierungen zu vermeiden.
-
-
-# Kodierungsrichtlinien
+# LilyPond Coding
 
 Bei der Kodierung steht im Vordergrund, dass die Quelltext-Dateien *ebenfalls*
 Bestandteil der Edition sind, nicht nur die grafischen Erzeugnisse. Deshalb
@@ -303,9 +166,9 @@ und eine optionale Include-Datei `1756_NNN_NN-include.ily`.
 Klären, ob der Inhalt ins TEI kopiert wird oder nur ein Link gesetzt. Dann hier
 beschreiben.
 
-## Die Hauptdatei
+## The Main File
 
-### Dateistruktur
+### File Structure
 
 Die Hauptdatei enthält einen kurzen Vorspann, den Inhalt und ggfs. eine Referenz
 auf das Partiturtemplate. Der folgende Code wird automatisch für ein Beispiel
@@ -405,7 +268,7 @@ lower = \relative {
 
 für zwei Systeme.
 
-### Kodierung
+### Coding Guidelines
 
 Der Inhalt soll v.a. gut lesbar, aber auch einheitlich sein und soll daher
 folgenden Richtlinien folgen:
@@ -433,13 +296,13 @@ folgenden Richtlinien folgen:
   wofür in der Bibliothek alle erforderlichen Befehle bereitgestellt
   sind/werden.
 
-### Die optionale Inklude-Datei
+## The Optional Include File
 
 Sofern ein Beispiel spezielle Funktionalität, spezielles Erscheinungsbild oder
 individuelle Tweaks erforderlich macht, sollen diese in der optionalen Datei
 `1756_NNN_NN-include.ily` kodiert werden.
 
-#### Erweiterungsfunktionalität
+### Load Tools From the Toolbox
 
 Mit dem Befehl \cmd{loadTool <tool>} können Erweiterungsbibliotheken geladen
 werden, die für das gegebene Beispiel erforderlich sind. Verfügbare »Tools« sind
@@ -447,7 +310,7 @@ die Dateien im Verzeichns `library/toolbox`, wobei sie ohne Verzeichnis und ohne
 Endung angegeben werden, z.B. \cmd{loadTool non-ragged}. Der Inhalt der Toolbox
 wird im nächsten Hauptabschnitt dokumentiert.
 
-#### Spezielles Erscheinungsbild
+### Layout Settings
 
 In einem \cmd{layout}-Block können spezielle Anforderungen an das
 Erscheinungsbild erfüllt werden, etwa durch spezielle Overrides oder die
@@ -455,7 +318,7 @@ Verwendung/Unterdrückung spezieller Engraver. Sofern es sich dabei um mehr als
 einmal auftretende Elemente handelt (z.B. das Unterdrücken des Rastrals mit
 seinen Elementen), sollten diese jedoch in ein »Tool« ausgelagert werden.
 
-#### Individuelle Tweaks
+### Specific Tweaks
 
 Individuelle Tweaks können mit Hilfe des `edition-engraver`-Packages extern in
 die Partitur »injiziert« werden, ohne die Kodierung mit dem Inhalt zu
@@ -465,8 +328,12 @@ vermischen.
 Die zusätzlich bereitgestellten Funktionen zur Vereinfachung der Kodierung
 werden später dokumentiert, wenn sie sich hinreichend »gesetzt« haben.
 
-## Verfügbare Spezialbefehle
+## The Library / Toolbox
 
 \lyIssue{!}
 
 Verfügbare Spezialbefehle werden ebenfalls etwas später dokumentiert.
+
+# Output Configuration
+
+# Producing the Required Image Files
