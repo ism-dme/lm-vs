@@ -8,7 +8,7 @@
 %}
 
 \version "2.19.80"
-\include "init-edition.ily"
+\include "../../library/init-edition.ily"
 
 upper = {
   \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details

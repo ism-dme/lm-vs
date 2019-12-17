@@ -3,7 +3,7 @@
 %}
 
 \version "2.19.80"
-\include "init-edition.ily"
+\include "../../library/init-edition.ily"
 
 \relative {
   a'\maxima*1/8 _\latinItalic "Maxima,"

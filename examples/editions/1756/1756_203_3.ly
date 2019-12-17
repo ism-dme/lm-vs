@@ -3,7 +3,7 @@
 %}
 
 \version "2.19.80"
-\include "init-edition.ily"
+\include "../../library/init-edition.ily"
 
 upper = \relative {
   \criticalRemark "Im Druck keine Taktangabe."

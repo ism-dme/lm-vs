@@ -3,7 +3,7 @@
 %}
 
 \version "2.19.80"
-\include "init-edition.ily"
+\include "../../library/init-edition.ily"
 
 % Complete upperOne and upperTwo *or* upper
 upper = \relative {

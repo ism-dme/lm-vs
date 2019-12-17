@@ -3,7 +3,7 @@
 %}
 
 \version "2.19.81"
-\include "init-edition.ily"
+\include "../../library/init-edition.ily"
 
 \relative {
   % Das Beispiel beginnt im Druck mit einem allein stehenden Kustos

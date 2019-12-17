@@ -3,7 +3,7 @@
 %}
 
 \version "2.19.81"
-\include "init-edition.ily"
+\include "../../library/init-edition.ily"
 
 {
   \annotatedNoteHead c'' \longa*1/4 "Eine lange," "Longa."
