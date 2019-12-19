@@ -54,4 +54,4 @@
 % in the staff-padding-by-direction callback function.
 % This can be used to force grobs to different common baselines
 % depending on the direction.
-\registerOption mozart.staff-padding-by-direction #'(0 . 0)
+\registerOption mozart.staff-padding-by-direction ##f
