@@ -33,7 +33,7 @@ customTrebleClef =
 \layout {
   \context {
     \Voice
-    \override TextScript.staff-padding = 3
+    \override TextScript.staff-padding = 2.3
   }
   \context {
     \Staff
