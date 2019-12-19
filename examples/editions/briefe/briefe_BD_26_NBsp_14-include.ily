@@ -9,3 +9,6 @@
 \loadTool custos
 
 \mod 1 0/8 \hideTuplets
+\mod 1 0/8 \shape #'((0 . 0)(0 . 0)(0 . -0.5)(0 . -1)) Slur
+
+\setOption scholarly.annotate.colors.critical-remark #black

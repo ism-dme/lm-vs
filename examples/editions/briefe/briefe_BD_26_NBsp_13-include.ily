@@ -6,3 +6,10 @@
 %}
 
 \loadTool custos
+
+\layout {
+  \context {
+    \Voice
+    \override TupletBracket.direction = #UP
+  }
+}

@@ -21,5 +21,5 @@
 
   |
 
-  \custos e )
+  \custos e <>)
 }
