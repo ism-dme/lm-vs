@@ -10,7 +10,6 @@
   \time 3/4
   \key bes \major
   bes'4 bes8. ( [ c16 ] d32
-  _"Ey! ist das nicht ein Schuß?"
   [ es f g a16 bes ] ) 
   
   |
