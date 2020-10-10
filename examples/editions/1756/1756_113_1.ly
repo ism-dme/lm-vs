@@ -31,7 +31,7 @@ upper = \relative {
     e16 \strich [ g ( f ) ] e \strich [ d ( c ) ]
     a'16 \strich [ g ( f ) ] e \strich [ d ( c ) ]
     b16 \strich [ c ( d ) ] fis, \strich [ g ( a ) ]
-    g16 \strich [ fis! ( g ) ] d \strich [ e ( f ) ]
+    g16 \strich [ fis ( g ) ] d \strich [ e ( f ) ]
 
     |
 
