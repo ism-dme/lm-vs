@@ -64,7 +64,7 @@
          (toward-stem-shift . 0.75)
          )))
 
-#(define trill-list (make-trill-list "trill" "t."))
+#(define trill-list (make-trill-list "trill" "tr"))
 #(define trill-list-brief (make-trill-list "trill-brief" "t:"))
 
 %% A macro setting the lists from above in the copy of `default-script-alist´
@@ -122,6 +122,7 @@ asterisk =
 t =
 #(define-event-function ()()
    #{
+
      -\trill-artic
    #})
 
