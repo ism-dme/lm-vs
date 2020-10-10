@@ -21,17 +21,9 @@
 
   |
 
-  \criticalRemark \with {
-    message = "Im Druck kein Auflösungzeichen."
-    item = Accidental
-  }
   c!16 \p [ ( b ) b8. ] bes16 \f [ bes bes ]
 
   |
 
-  \criticalRemark \with {
-    message = "Im Druck kein b"
-    item = Accidental
-  }
-  \custos bes
+   \custos bes
 }
