@@ -8,7 +8,7 @@
 \relative {
   \time 3/4
   \key c \major
-  e'16 [ _\downbow e8 _\upbow d f _\bowAlignedText "Und so immerfort." e g f16 ] (
+  e'16 [ _\downbow e8 _\upbow d f _\bowAlignedText "und so immerfort." e g f16 ] (
 
   |
 
