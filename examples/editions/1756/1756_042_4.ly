@@ -9,5 +9,5 @@
   \criticalRemark "Im Druck kein Schlüssel"
   \clef treble
   \key c \major
-  a'4 b c
+  a'4 _"a" b _"h" c _"c"
 }

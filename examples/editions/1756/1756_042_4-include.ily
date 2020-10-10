@@ -8,5 +8,6 @@
   \context {
     \Staff
     \omit TimeSignature
+    \override TextScript.staff-padding = 3.5
   }
 }
