@@ -149,7 +149,7 @@ two = \relative {
     message = "Im Druck kein Auflösungszeichen."
     item = Accidental
   }
-  b ) ]
+  b! ) ]
 
   |
 
@@ -184,7 +184,7 @@ two = \relative {
     message = "Im Druck kein Auflösungszeichen."
     item = Accidental
   }
-  e ) ]
+  e! ) ]
 
   |
 
