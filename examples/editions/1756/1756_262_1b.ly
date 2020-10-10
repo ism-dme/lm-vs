@@ -6,7 +6,8 @@
 \include "../../library/init-edition.ily"
 
 \relative {
-  \criticalRemark "Im Druck kein Schlüssel"
+  \criticalRemark "Im Druck keine Tempoangabe"
+  \tempo "Andante."
   \clef treble
   \criticalRemark "Im Druck keine Taktangabe"
   \time 6/8
