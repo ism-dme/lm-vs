@@ -135,8 +135,8 @@
     "has_file": "1756/1756_028_1.ly",
     "has_include": "1756/1756_028_1-include.ily",
     "entered": true,
-    "review": false,
-    "accepted": true,
+    "review": true,
+    "accepted": false,
     "rejected": false
   },
   "1756_034_1": {
@@ -485,8 +485,8 @@
     "has_file": "1756/1756_042_4.ly",
     "has_include": "1756/1756_042_4-include.ily",
     "entered": true,
-    "review": false,
-    "accepted": true,
+    "review": true,
+    "accepted": false,
     "rejected": false
   },
   "1756_043_1": {
@@ -1445,8 +1445,8 @@
     "has_file": "1756/1756_082_3.ly",
     "has_include": "1756/1756_082_3-include.ily",
     "entered": true,
-    "review": false,
-    "accepted": true,
+    "review": true,
+    "accepted": false,
     "rejected": false
   },
   "1756_082_4": {
@@ -2325,8 +2325,8 @@
     "has_file": "1756/1756_132_4.ly",
     "has_include": "1756/1756_132_4-include.ily",
     "entered": true,
-    "review": false,
-    "accepted": true,
+    "review": true,
+    "accepted": false,
     "rejected": false
   },
   "1756_132_5": {
@@ -4395,8 +4395,8 @@
     "has_file": "1756/1756_196_3a.ly",
     "has_include": "1756/1756_196_3a-include.ily",
     "entered": true,
-    "review": false,
-    "accepted": true,
+    "review": true,
+    "accepted": false,
     "rejected": false
   },
   "1756_196_3b": {
@@ -5875,8 +5875,8 @@
     "has_file": "1756/1756_236_2.ly",
     "has_include": "1756/1756_236_2-include.ily",
     "entered": true,
-    "review": false,
-    "accepted": true,
+    "review": true,
+    "accepted": false,
     "rejected": false
   },
   "1756_239_1a": {
@@ -6335,8 +6335,8 @@
     "has_file": "1756/1756_250_2b.ly",
     "has_include": "1756/1756_250_2b-include.ily",
     "entered": true,
-    "review": false,
-    "accepted": true,
+    "review": true,
+    "accepted": false,
     "rejected": false
   },
   "1756_250_3a": {
@@ -6415,8 +6415,8 @@
     "has_file": "1756/1756_256_2.ly",
     "has_include": "1756/1756_256_2-include.ily",
     "entered": true,
-    "review": false,
-    "accepted": true,
+    "review": true,
+    "accepted": false,
     "rejected": false
   },
   "1756_256_3": {
@@ -6525,8 +6525,8 @@
     "has_file": "1756/1756_262_1b.ly",
     "has_include": "1756/1756_262_1b-include.ily",
     "entered": true,
-    "review": false,
-    "accepted": true,
+    "review": true,
+    "accepted": false,
     "rejected": false
   },
   "1756_264_1": {
