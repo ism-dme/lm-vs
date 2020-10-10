@@ -20,13 +20,8 @@
 
   |
 
-  \musicalIssue \with {
-    message = "Im Druck kein Bogen"
-    item = Slur
-  }
-  {
-    \appoggiatura a4
-  } g2. ( g )
+  \appoggiatura a4
+  g2. ( g )
 
   \doubleBar
 }
