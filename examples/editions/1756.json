@@ -652,10 +652,10 @@
   "1756_047_2": {
     "basedon": "1756_047_2",
     "relation": "equal",
-    "has_file": false,
-    "has_include": false,
-    "entered": false,
-    "review": false,
+    "has_file": "1756/1756_047_2.ly",
+    "has_include": "1756/1756_047_2-include.ily",
+    "entered": true,
+    "review": true,
     "accepted": false,
     "rejected": false
   },
