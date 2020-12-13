@@ -6,3 +6,7 @@
 *.eps
 *.png
 *.svg
+*.aux
+*.idx
+*.out
+*.toc
