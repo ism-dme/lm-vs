@@ -12,10 +12,6 @@
     \override TextScript.staff-padding = 4
   }
   \context {
-    \Staff
-    \omit TimeSignature
-  }
-  \context {
     \Score
     \override Tie.minimum-length = 2.5
     \override Slur.minimum-length = 2

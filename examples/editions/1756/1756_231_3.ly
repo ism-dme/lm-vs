@@ -9,6 +9,8 @@ one = \relative {
   \criticalRemark "Im Druck kein Schlüssel."
   \clef treble
   \key d \major
+  \criticalRemark "Im Druck keine Taktangabe."
+  \time 4/4
   \cadenzaOn
 
   \voiceOne
