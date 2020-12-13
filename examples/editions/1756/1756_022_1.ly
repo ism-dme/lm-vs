@@ -11,5 +11,4 @@
   a \breve*1/2  _\latinItalic "Brevis,"
   a1*1          _\latinItalic "Semibrevis,"
   f2*2          _\latinItalic "Minima."
-  s4            _\latinItalic "(f)"
 }
