@@ -18,11 +18,11 @@ upper = \relative {
     b'16 [ ( c ] ) r \p b [ ( c ] )
   }
   \tuplet 3/2 8 {
-    r \p cis [ ( d ) ] r \p cis [ ( d ] )
+    r \f cis [ ( d ) ] r \p cis [ ( d ] )
 
     |
 
-    r16 \f e [ ( f ] ) r \p a, [ ( b ] ) r \f b [ ( 
+    r16 \f e [ ( f ] ) r \p a, [ ( b ] ) r \f b [ (
     \criticalRemark \with {
       message = "Im Druck kein Auflösungszeichen."
       item = Accidental
