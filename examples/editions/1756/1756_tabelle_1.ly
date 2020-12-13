@@ -208,7 +208,7 @@ music.20 = \relative {
 
   c,16 [ e'32 ( d ) c ( d ) e16 ] c32 [ ( b c ) d \strich e16 c ]
   \criticalRemark "In Vorlage g"
-  b,16 [ d'32 ( c ) b ( c ) d16 ] b32 [ ( a b ) c \strich d16 b ] |
+  d,16 [ d'32 ( c ) b ( c ) d16 ] b32 [ ( a b ) c \strich d16 b ] |
 
   c1
 }
