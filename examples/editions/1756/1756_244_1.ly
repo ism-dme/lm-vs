@@ -13,13 +13,29 @@
 
   |
 
-  \grace { b32 [ a g ] } a4
-  \grace { a32 [ g fis ] } g4
+  \grace {
+    b32
+    -\criticalRemark "Im Druck kein Bogen"
+    ( [ a g ] }
+  a4 )
+  \grace {
+    a32
+    -\criticalRemark "Im Druck kein Bogen"
+    ( [ g fis ] }
+  g4 )
 
   |
 
-  \grace { g32 [ fis e ] } fis4
-  \grace { fis32 [ e d ] } e4
+  \grace {
+    g32
+    -\criticalRemark "Im Druck kein Bogen"
+    ( [ fis e ] }
+  fis4 )
+  \grace {
+    fis32
+    -\criticalRemark "Im Druck kein Bogen"
+    ( [ e d ] }
+  e4 )
 
   |
 
