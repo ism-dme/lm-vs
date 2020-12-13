@@ -15,5 +15,6 @@
     \omit TimeSignature
     \omit Clef
     \override BarLine.thick-thickness = 2.7
+    \override BarLine.extra-offset = #'(-2 . -0.1)
   }
 }
