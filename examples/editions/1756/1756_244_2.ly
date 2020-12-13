@@ -13,7 +13,11 @@
   
   |
   
-  \grace { b32 [ a gis ] } a8 [ gis!16 a ] b,8 [ a' ] 
+  \grace { 
+    b32
+    -\criticalRemark "Im Druck kein Bogen"
+    ( [ a gis ] }
+    a8 ) [ gis!16 a ] b,8 [ a' ] 
   \grace { b32 [ a gis ] } a8 [ gis16 a ]
   
   |
