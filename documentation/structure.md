@@ -140,7 +140,7 @@ rendered differently for either edition.
 }
 ```
 
-`1769_038_3` is based on a different example from `1756` to -- which its content
+`1769_038_3` is based on a different example from `1756` -- to which its content
 is equal.  This doesn't mean anything different than that an example is reused
 identically but ended up on a different page (position).  The higher the page
 numbers the greater the page offset is to be expected.
@@ -156,7 +156,7 @@ numbers the greater the page offset is to be expected.
 }
 ```
 
-`1769_042_5` has no base example in `1756`, i.e.  it has been newly added in the
+`1769_042_5` has no base example in `1756`, i.e. it has been newly added in the
 later edition.  Technically the two items in the dictionary are redundant, but
 it has been chosen to be done like this for programmatic consistency.
 
@@ -185,70 +185,47 @@ The last element of the edition's dictionary is not an example entry but a list
 with the key `"removed"`.  This plainly lists the names of examples from `1756`
 which don't exist anymore in the later edition.
 
-* `modified` -- showing variants
-* `corrected` -- showing only variants that correct the earlier version's errors
+**errors and corrections**
 
-**TODO:** clarify
+Some examples expose errors in any edition, which have (hopefully) been
+corrected in our editorial process. Many of the errors ofd the first edition
+have been fixed in later editions. However, in some cases errors have been
+*added* in later editions, and it is even possible that the same example in a
+later edition includes fixes *and* new errors.
 
-
-
-in relation to the earlier edition.
-
-This is an excerpt of a JSON structure for the 1769 edition:
+Any examples that differ only in terms of errors and corrections are labeled
+“differing” in the JSON files:
 
 ```json
 {
-  "1769_022_1": {
-    "basedon": "1756_022_1",
-    "relation": "equal"
-  },
-  "1769_038_3": {
-    "basedon": "1756_038_2a",
-    "relation": "equal"
-  },
-  "1769_042_5": {
-    "basedon": "",
-    "relation": "new"
-  },
+  "1769_079_3": {
+    "basedon": "1756_077_3",
+    "relation": "differing"
+  }}
+```
+
+**variants**
+
+Some examples show “real”, i.e. musical variants in later editions, which are
+labeled as “modified”:
+
+```json
+{
   "1769_043_1": {
     "basedon": "1756_043_1",
     "relation": "modified"
-  },
-  "1769_079_3": {
-    "basedon": "1756_077_3",
-    "relation": "corrected"
-  },
-  "removed": [
-    "1756_202_2",
-    "1756_211_1a"
-  ]
+  }
 }
 ```
 
-The first entry shows the simple (but rare) case that the example is a literal
-copy at the same position in the book.
+**TODO:** clarify
 
-The second entry shows the most prominent case of an example reused literally
-but with a changed location (in this case it's still on the same page, but after
-a certain point pages *always* don't match anymore).
+These are the relations between examples that are encoded in the JSON files,
+which serve as a kind-of macro documentation. Two further awspects have to be
+discussed in the following sections: 
 
-The third entry shows a newly added example with an empty `basedon` property
-because this isn't based on an existing example in another edition.
-
-The fourth entry shows an example that has been modified for the later edition.
-The modifications are encoded as such.
-
-The final entry shows an example that has been modified but only with
-*corrections* -- typically those that have already been emended in the new
-edition of the `1756` original edition.
-
-In some cases examples have been removed completely from the later edition.
-Since there is no way in the JSON structure to natively indicate that fact (it
-would require entries with empty keys) one entry with the `removed` key is
-appended to the dictionary, including a list of names of removed examples.
-
-The file `1756.json` is special in so far as it contains the *base* edition,
-therefore each example is “based on” itself and has an “equal” relation to that.
+* Encoding of variants/differences
+* Rendering of differing images from differing example versions
 
 # Representation of Readings
 
