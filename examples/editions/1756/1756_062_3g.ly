@@ -14,7 +14,7 @@ upper = \relative {
   \criticalRemark "Im Druck einfacher Taktstrich"
   \doubleBar
   \key ges \major
-  ges,4 ^\markup { (G\Flat) oder Ges Dur. }
+  ges,4 ^\markup { (G\Flat) oder (Ges) Dur. }
   as bes ces des es f ges
   \doubleBar
 }
@@ -26,7 +26,7 @@ lower = \relative {
 
   \barlineComment "oder übersetzt,"
   \key es \minor
-  es,4 ^\markup { (E\Flat) oder Es moll. }
+  es,4 ^\markup { (E\Flat) oder (Es) moll. }
   f ges as bes ces des es
 }
 
