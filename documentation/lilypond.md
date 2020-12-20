@@ -1,5 +1,5 @@
 ---
-documentclass: lyluatexmanual
+documentclass: lmvsmanual
 title: "Leopold Mozart: Violin School"
 subtitle: LilyPond Set-up and Coding Documentation
 author: Urs Liska
@@ -7,96 +7,157 @@ date: \today
 toc: yes
 ---
 
-# Introduction / Objectives
-
-# Representation of Readings
-
-The differences between an example and the version it is based on are encoded as
-*choices* in the LilyPond input files. From there various representations are
-possible, although initially they are not initially used in the digital edition.
-In addition to the colour coding (grey) of editorial emendations different
-colours may be used at some point in the future to indicate the reading state of
-the currently viewed example, to either highlight a reading as a modification or
-to show the text of the original example in-place.
-
-More details about this will be added when the edition makes use of this
-feature. Detailed documentation about these matters can be found in the
-“LilyPond” manual in the same directory.
-
-This is just a copy from the other documentation file to keep it on the “stack”.
-
 ---
 
-The music examples for the digital edition of Leopold Mozart's Violin School are
-encoded and engraved with [GNU LilyPond](http://lilypond.org) using a number of
-assisting technology which will be described in more detail in this document.
+\begin{abstract}
 
-The overarching goal is to achieve both beautiful engraving and clean input
-files whose content can be directly included in the \textsc{tei} sources of the
-overall edition. Substantial efforts have been made to allow a strict
-content-only encoding in the main LilyPond input files, with all the necessary
-programming to produce the often non-standard notation of the model without
-polluting the main input with rendering hints. There are a few instances where
-this was not achieved, sometimes because of inherent conceptual limitations,
-sometimes simply due to a lack of time to find an even more elegant solution.
-However, in the overwhelming majority of cases the input files can be read as
-plain content.
+This document describes in detail how the \href{https://lilypond.org}{GNU
+LilyPond} part of the digital edition of Leopold Mozart's violin school is
+handled, and it can be used as a Contributor's Guide to this edition.  This
+includes requirements for setting up the environment, basic code styling
+instructions, and specific encoding guidelines for the goals and requirements of
+the edition.  Describing editorial guidelines does \emph{not} count to the
+intentions of the guide.
 
-Editorial decisions and comments have been faithfully encoded as annotations in
-the input, and they are currently visualized by printing the affected score
-items in grey. The textual comments are so far only available in the edition's
-source file, but it is intended to make the full text available in the GUI at
-some point.
+\end{abstract}
 
-Also encoded in the input files are the variant readings between different
-source editions, and these encodings are used to produce different example files
-from the same input files, but initially they are not presented or highlighted
-in a graphical way.
+# Introduction / Objectives
+
+Leopold Mozart's Violin School includes a large number of music examples, which
+have to be encoded and rendered as part of the process of creating a new digital
+edition of multiple versions/editions of the book.  The goal of this part of the
+editorial process is to provide both beautiful music notation *and* clean
+textual input encoding of the editorial content.  
+
+The edition (of the book's text as a whole) is encoded in \textsc{tei} files and
+rendered to a browser.  The music examples are compiled to \textsc{png} files
+for visual rendering in the browser, but their LilyPond source is included in a
+\textsc{tei} as well, for later human and/or machine retrieval.  This creates
+the specific challenge of producing the notation from semantically clean input
+that can directly be published as editorial ”content”.  Substantial efforts have
+gone into an infrastructure allowing for this strict content-only encoding
+approach, especially dealing with the complication that this kind of book often
+requires non-standard notation, which would in itself be challenging for most
+notation programs or score writers.
+
+Editorial remarks and emendations have been faithfully encoded as annotations in
+the input files, using additional LilyPond libraries, and they are currently
+visualized by colouring the affected score items.  The textual comments are so
+far only available as-is in the edition's source file, but making the full text
+available in the GUI is intended as well at some point.
+
+Variant readings between different source editions are encoded as well, and
+these are used to produce different graphical renderings for different versions
+of the edition.
 
 # Dependencies / Installation
 
-The following section will detail the tools, libraries, and resources that are necessary to compile the music examples and to produce the various image files used in the edition. The installation instructions are rather concise and not intended as a step-by-step guide for inexperienced users.
-The platform on which the infrastructure was developed and used is Linux but should mostly be independent from the used operating system. Feedback for making the system work on Windows and Mac is highly welcome.
+The following section will detail the tools, libraries, and resources that are
+necessary to compile the music examples and to produce the various image files
+used in the edition.  The installation instructions are rather concise and not
+intended as a step-by-step guide for inexperienced users.  The platform on which
+the infrastructure was developed and used is Linux but should mostly be
+independent from the used operating system.  Feedback for making the system work
+on Mac and especially Windows is highly welcome.
 
 For efficient handling of the huge repository of examples a dedicated
-Frescobaldi extension has been developed, which will be made publicly avaialble
-when we consider it stable enough to be released.
+Frescobaldi extension^[<https://github.com/frescobaldi-extensions/>] has been
+developed, which will be made publicly available once it is considered stable
+enough to be released.  Currently it is hosted in a private location on
+GitHub^[<https://github.com/ism-dme/lm-vs-frescobaldi-extension>] but not ready
+for use except by Urs Liska.
 
 ## LilyPond
 
-The scores can be compiled with a current version of the development branch,
-i.e. LilyPond >= 2.19.80. When the next stable version 2.20 is released it will
-be the recommended platform for the edition, but the current stable release 2.18
-is explicitly *not* supported and will not work.
-
-LilyPond installation packages for Windows and Mac (and Linux if the version
-included in the distribution repository is not new enough) can be downloaded
-from <http://lilypond.org/development.html>.
+[GNU LilyPond](https://lilypond.org) is the notation program used to produce the
+music examples, so its installation is the primary requirement.  The edition
+uses the current (end-of-2020) stable version `2.20` but should also be
+compilable by (at least earlier) versions of the `2.21` development branch.
+Once a stable release `2.22` will be released it is rather likely that it can
+only be used with significant updates to the infrastructure, and the previous
+stable release 2.18 is explicitly *not* supported.  LilyPond installation
+packages for all operating systems can be downloaded from
+<https://lilypond.org/download.html>.
 
 ## openLilyLib
 
-[*openLilyLib*](https://github.com/openlilylib) is a powerful extension infrastructure for LilyPond, and the Mozart project makes heavy use of its functionality. Current versions of a number of packages have to be installed and used for the examples to compile.^[General information about setting up *openLilyLib* can be found at the [Wiki page(https://github.com/openlilylib/oll-core/wiki)]]. The following packages (names and Git URLs, alternatively the Github repositories below <https://github.com/openlilylib> provide downloadable archives):
+Many of the more complex features of the edition infrastructure build upon
+\option{openLilyLib}, a powerful extension infrastructure
+for LilyPond.  The following packages have to be installed for compiling the
+Leopold Mozart examples:
 
-* oll-core `https://github.com/openlilylib/oll-core.git`
-* notation-fonts `https://github.com/openlilylib/notation-fonts.git`
-* scholarly `https://github.com/openlilylib/scholarly.git`
-* edition-engraver `https://github.com/openlilylib/edition-engraver.git`
-* stylesheets `https://github.com/openlilylib/stylesheets.git`
+* oll-core
+* edition-engraver
+* notation-fonts
+* scholarly
+* stylesheets
 
-People who have set up their Github account to use SSH access will know how to
-change the above URLs accordingly.
+### Hosting
 
-**TODO:** Clarify if there still is a file `openlilylib-root` to be inserted!
+Due to a change in maintainership in summer 2020 there are no authoritative
+instructions available, and the situation with code hosting is somewhat fragile.
+This has to be sorted out at some point to keep the edition maintainable.
+
+#### GitHub
+
+The original place of development and hosting was the
+<https://github.com/openlilylib> organisation on Github.  As long as this code
+is not removed each package will reside in a `<package-name>.git` repository
+below the organization level and can be cloned through HTTPS or SSH or
+downloaded as a \textsc{zip} archive, as is usual with Github.  The
+[Wiki page](https://github.com/openlilylib/oll-core/wiki) still gives accurate
+information about installation and basic usage of \option{openLilyLib}.
+However, this code will not be updated anymore and is not suitable for permanent
+use with the edition.
+
+#### Public Fork
+
+The main development of openLilyLib has been *moved* to
+[GitLab](https://about.gitlab.com/) by a new maintainer, and information will at
+some point be available on the <https://openlilylib.space> website.  This fork
+will significantly change the code in its core and make it immediately unusable
+for the Leopold Mozart edition.  
+
+#### Private Copy
+
+The original code base of \option{openLilyLib} has been *copied* to a privately hosted
+Git server, where the repositories are publicly available below the organization
+URL <https://git.ursliska.de/openlilylib/>.  However, there are no plans for
+substantial further development beyond the needs of some projects that remain to
+be completed with \option{openLilyLib} (with the Violin School being one of them).
+
+At some point there needs to be a *copy* of (at least the used) code kept
+together with the main code base of the edition to ensure the maintainability of
+the edition beyond an initial rendering of the example image files.  During the
+editing process there should be repository mirrors (against `git.ursliska.de`,
+not the original Github location) within the
+[ism-dme](https://github.com/ism-dme) Github organization, while at some point
+this connection may be cut and replaced by an independent copy of only the
+necessary code.
+
+## Frescobaldi
+
+[Frescobaldi](https://frescobaldi.org) is arguably the most comprehensive
+editing environment for working with LilyPond.  While not technically a
+requirement it is *strongly* recommended to be used for editing the Leopold
+Mozart edition.  The main and most important feature is the Extension API added
+in Frescobaldi 3.1, which allows to load a custom extension written for the
+management of the large number of examples in the edition.  
 
 ## Fonts
 
-The edition uses the *Ross* notation font that can be obtained from
-<https://musictypefoundry.com> and that has to be installed explicitly for each
-LilyPond instance. Fresocbaldi starting with version 3.1 (or current master from
-Github) includes a convenient dialog `Tools=>Document Fonts` to simplify this
+The notation font used in the edition is
+[Ross](https://www.musictypefoundry.com/product/mtf-ross), which can be obtained
+from the [original designer](https://musictypefoundry.com).  Each notation font
+has to be installed in the LilyPond instance used for rendering.  Installation
+instructions are included in the font's download \textsc{zip} file.  Frescobaldi
+>= 3.1 includes a convenient dialog `Tools => Document Fonts` to simplify this
 process.
 
-**TODO:** Text fonts
+The *text* fonts used in the rendering of the edition are
+[Georgia](https://en.wikipedia.org/wiki/Georgia_(typeface)) and
+[Arial](https://en.wikipedia.org/wiki/Arial).  These have to be installed as
+regular system fonts on the machine compiling the examples with LilyPond.
 
 # File Organization Overview
 
@@ -351,6 +412,24 @@ werden später dokumentiert, wenn sie sich hinreichend »gesetzt« haben.
 \lyIssue{!}
 
 Verfügbare Spezialbefehle werden ebenfalls etwas später dokumentiert.
+
+## Annotations
+
+## Encoding Readings
+
+NOTE: This is just a copy from the other documentation file to keep it on the “stack”.
+
+The
+differences between an example and the version it is based on are encoded as
+*choices* in the LilyPond input files. From there various representations are
+possible, although initially they are not initially used in the digital edition.
+In addition to the colour coding (grey) of editorial emendations different
+colours may be used at some point in the future to indicate the reading state of
+the currently viewed example, to either highlight a reading as a modification or
+to show the text of the original example in-place.
+More details about this will be added when the edition makes use of this
+feature. Detailed documentation about these matters can be found in the
+“LilyPond” manual in the same directory.
 
 # Output Configuration
 
