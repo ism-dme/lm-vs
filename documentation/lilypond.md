@@ -9,6 +9,24 @@ toc: yes
 
 # Introduction / Objectives
 
+# Representation of Readings
+
+The differences between an example and the version it is based on are encoded as
+*choices* in the LilyPond input files. From there various representations are
+possible, although initially they are not initially used in the digital edition.
+In addition to the colour coding (grey) of editorial emendations different
+colours may be used at some point in the future to indicate the reading state of
+the currently viewed example, to either highlight a reading as a modification or
+to show the text of the original example in-place.
+
+More details about this will be added when the edition makes use of this
+feature. Detailed documentation about these matters can be found in the
+“LilyPond” manual in the same directory.
+
+This is just a copy from the other documentation file to keep it on the “stack”.
+
+---
+
 The music examples for the digital edition of Leopold Mozart's Violin School are
 encoded and engraved with [GNU LilyPond](http://lilypond.org) using a number of
 assisting technology which will be described in more detail in this document.
