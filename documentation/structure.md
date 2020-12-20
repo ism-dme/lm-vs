@@ -1,5 +1,5 @@
 ---
-documentclass: lyluatexmanual
+documentclass: lmvsmanual
 title: "Leopold Mozart: Violin School"
 subtitle: "Concordances | JSON files"
 date: \today
