@@ -92,7 +92,7 @@ Leopold Mozart examples:
 * scholarly
 * stylesheets
 
-### Hosting
+### Hosting Complications
 
 Due to a change in maintainership in summer 2020 there are no authoritative
 instructions available, and the situation with code hosting is somewhat fragile.
@@ -135,15 +135,6 @@ not the original Github location) within the
 this connection may be cut and replaced by an independent copy of only the
 necessary code.
 
-## Frescobaldi
-
-[Frescobaldi](https://frescobaldi.org) is arguably the most comprehensive
-editing environment for working with LilyPond.  While not technically a
-requirement it is *strongly* recommended to be used for editing the Leopold
-Mozart edition.  The main and most important feature is the Extension API added
-in Frescobaldi 3.1, which allows to load a custom extension written for the
-management of the large number of examples in the edition.  
-
 ## Fonts
 
 The notation font used in the edition is
@@ -159,91 +150,55 @@ The *text* fonts used in the rendering of the edition are
 [Arial](https://en.wikipedia.org/wiki/Arial).  These have to be installed as
 regular system fonts on the machine compiling the examples with LilyPond.
 
+## Frescobaldi
+
+[Frescobaldi](https://frescobaldi.org) is arguably the most comprehensive
+editing environment for working with LilyPond.  While not technically a
+requirement it is *strongly* recommended to be used for editing the Leopold
+Mozart edition.  The main and most important feature is the Extension API added
+in Frescobaldi 3.1, which allows to load a custom extension written for the
+management of the large number of examples in the edition.  
+
+Frescobaldi can be obtained from its [download
+page](https://frescobaldi.org/download) or through
+[Github](https://frescobaldi.org/download) where a
+[Wiki](https://github.com/frescobaldi/frescobaldi/wiki) describes
+(from-current-master-) installation on various operating systems.
+
 # File Organization Overview
 
-The music examples are contained in the repository's `examples` directory. This
-contains `documentation`, `library`, and `editions` subdirectories. `library`
-contains the project-specific LilyPond fucntionality, while `editions` includes
-one `.json` file for each edition and a corresponding subdirectory where the
-LilyPond data for the corresponding edition is located.
+This section outlines how directories and files are organized in the main
+project repository. It is related to information given in the complementary
+“structure” documentation. The root of the repository is referred to as
+\option{/}, so “absolute” paths are understood relative to the repository
+“root”.
 
-## Editions
+This root directory contains two directories, \option{documentation} and
+\option{examples}, the first providing self-sufficient source files for
+building the project documentation, the latter the editions' content and
+support libraries. At some point the Frescobaldi extension will be added in a
+separate directory.
 
-The content of each edition is documented in a file `<edition>.json` whose
-structure is described in the complementary `structure.md/pdf`, the examples
-themselves are encoded in a corresponding subdirectory, e.g.
-`examples/edition/1756`.
+\option{/examples/editions} contains the actual edition data -- described in
+detail in the “structure” documentation -- while \option{examples/library}
+contains supporting LilyPond code. This is not self-sufficient but relies on
+\option{openLilyLib} as described above with the dependencies. The libraries
+and their use are documented below.
 
-In the edition directory there is/will be one file `<edition>_<page>_<index>.ly`
-for each example, plus an optional file `<edition>_<page>_<index>-include.ily`.
-The `.ly` file is used to encode the actual edition content which will be copied
-verbatim into the \textsc{tei} file,while the optional `-include.ily` can be
-used to define layout settings, load tools or apply specific rendering hints.
-The integration of the include file is done markup-less as soon as it is present
-on disk. For more on the use of the include file see later sections.
+## Basic LilyPond Compilation
 
-
-**TODO:** Was damit tun? Muss das nicht sowieso noch verändert werden?
-
-Zusätzlich liegt am Ende des Hauptverzeichnisses die Datei `config.ily`. In
-dieser werden Optionen der Darstellungskonfiguration gesetzt (etwa der Umgang
-mit originalen Umbrüchen, farbiges Hervorheben etc.). Änderungen der
-Optionenwerte sollten nach Möglichkeit nicht committet werden.
-
-\lyIssue{!}
-
-Es ist noch nicht endgültig geklärt, inwieweit Frescobaldi ein GUI für diese
-Konfiguration bereitstellen wird.
-
-## Library
-
-Dieses Verzeichnis beinhaltet die Interne Infrastruktur.
-
-`init-1756.ily` ist die zentrale Start-Datei, die (als einziges Element) in
-jeder Hauptdatei eines Beispiels inkludiert wird.
-
-`default-appearance.ily` beinhaltet die allgemeinen Designvorgaben. Diese
-sollten nicht im Sinne von Konfigurationsoptionen verändert werden (stattdessen
-sollte im Bedarfsfall eine entsprechende Option programmiert werden), können
-aber dennoch von den Editoren bearbeitet werden.
-
-### library/score-blocks
-
-Dieses Verzeichnis enthält Dateien mit vorbereiteten Score-Blöcken, die auf den
-Inhalt »angewandt« werden können.
-
-### library/internal
-
-In diesem Verzeichnis sind die grundlegenden Werkzeuge, die von `init-1756.ily`
-für jede Kompilierung geladen werden.
-
-### toolbox
-
-Die Dateien in der Toolbox stellen zusätzliche Funktionalität bereit, die für
-einzelne Beispiele geladen werden soll. Diese können (in der
-`-include.ily`-Datei) mit dem Befehl \cmd{loadTool} geladen werden, das
-lediglich den Basisnamen des Tools erwartet:
-
-```lilypond
-\loadTool non-ragged
-```
-
-lädt beispielsweise die Datei `toolbox/non-ragged.ily`. Die verfügbaren
-Funktionen werden weiter unten dokumentiert.
-
-
-# LilyPond Coding
-
-Bei der Kodierung steht im Vordergrund, dass die Quelltext-Dateien *ebenfalls*
-Bestandteil der Edition sind, nicht nur die grafischen Erzeugnisse. Deshalb
-steht Klarheit, Einfachheit und semantische Eindeutigkeit im Vordergrund.
-
-Die Kodierung eines Beispiels ist aufgeteilt in eine Hauptdatei `1756_NNN_NN.ly`
-und eine optionale Include-Datei `1756_NNN_NN-include.ily`.
-
-\lyIssue{!}
-Klären, ob der Inhalt ins TEI kopiert wird oder nur ein Link gesetzt. Dann hier
-beschreiben.
+Each example is encoded in a file
+\option{/examples/editions/<prefix-key>/<prefix-key>\_<locator>\_<index>.ly}^[The
+compoments are explained in the structure documentation.] Any example can be
+directly compiled with LilyPond (originally targeted at the stable version
+2.20). The input file (essentially) starts with loading the preoject
+infrastructure through \cmd{include "../../library/init-edition.ily"}. The
+relative path to the library's starting file is a trade-off between complexity
+and portability. It means that the library has to be kept in the same relative
+position to the edition content but LilyPond's search path doesn't have to be extended through a command line argument. If at some point this has to be changed, e.g.
+for adding another edition, either all include statements will have to be
+updated, or LilyPond's search path has to be extended through a command line
+argument. But for now no search path modifications have to be made.
 
 ## The Main File
 
@@ -346,6 +301,57 @@ lower = \relative {
 ```
 
 für zwei Systeme.
+
+
+## The LilyPond Library
+
+Dieses Verzeichnis beinhaltet die Interne Infrastruktur.
+
+`init-1756.ily` ist die zentrale Start-Datei, die (als einziges Element) in
+jeder Hauptdatei eines Beispiels inkludiert wird.
+
+`default-appearance.ily` beinhaltet die allgemeinen Designvorgaben. Diese
+sollten nicht im Sinne von Konfigurationsoptionen verändert werden (stattdessen
+sollte im Bedarfsfall eine entsprechende Option programmiert werden), können
+aber dennoch von den Editoren bearbeitet werden.
+
+### library/score-blocks
+
+Dieses Verzeichnis enthält Dateien mit vorbereiteten Score-Blöcken, die auf den
+Inhalt »angewandt« werden können.
+
+### library/internal
+
+In diesem Verzeichnis sind die grundlegenden Werkzeuge, die von `init-1756.ily`
+für jede Kompilierung geladen werden.
+
+### toolbox
+
+Die Dateien in der Toolbox stellen zusätzliche Funktionalität bereit, die für
+einzelne Beispiele geladen werden soll. Diese können (in der
+`-include.ily`-Datei) mit dem Befehl \cmd{loadTool} geladen werden, das
+lediglich den Basisnamen des Tools erwartet:
+
+```lilypond
+\loadTool non-ragged
+```
+
+lädt beispielsweise die Datei `toolbox/non-ragged.ily`. Die verfügbaren
+Funktionen werden weiter unten dokumentiert.
+
+
+# LilyPond Coding
+
+Bei der Kodierung steht im Vordergrund, dass die Quelltext-Dateien *ebenfalls*
+Bestandteil der Edition sind, nicht nur die grafischen Erzeugnisse. Deshalb
+steht Klarheit, Einfachheit und semantische Eindeutigkeit im Vordergrund.
+
+Die Kodierung eines Beispiels ist aufgeteilt in eine Hauptdatei `1756_NNN_NN.ly`
+und eine optionale Include-Datei `1756_NNN_NN-include.ily`.
+
+\lyIssue{!}
+Klären, ob der Inhalt ins TEI kopiert wird oder nur ein Link gesetzt. Dann hier
+beschreiben.
 
 ### Coding Guidelines
 
