@@ -246,9 +246,41 @@ edition.  Basic differences are the number and naming of different image files
 fron one `1756` base file and the coloring of music and (our) emendations.
 
 The basis for these decisions are the relations between the example versions
-outlined in th section above.  The *conceptual* aspects of the rendering of
-different example relations will be discussed in the following section, while
-the *encoding* and technical aspects are documented in a separate document
-intended for contributors.
+outlined in th section above. The *conceptual* aspects of the encoding and
+rendering of different example relations will be discussed in the following
+section, while the *encoding* and technical aspects are documented in a
+separate document intended for contributors.
 
 # Rendering Scores from Examples
+
+The following subsections are a draft as basis for discussion.
+
+### equal
+
+Examples with relation “equal” have the same input, including errors and
+emendations. Therefore these examples don't need to be re-encoded at all: They
+are in the `1756` base file, and the `1769` example simply refers to it through
+“basedon” in the JSON file.
+
+The score rendering is identical, so conceptually no separate image files have
+to be compiled. But it has to be discussed whether separate equal files should
+be produced with the proper file names to be used in the respective
+editions.^[ActuaIf this is desired it should not be done through LilyPond but
+by creating a file copy in the OS.] It has to be discussed and decided whether
+it is better to have redundant files, but with a proper location-name, or to
+use the ”original” file name at the ”wrong” place, indicating the actual
+relationship. This issue does not only affect the prefix but also differing page locations.
+
+### new
+
+New examples are completely independent from the `1756` edition. Any such
+example will have to be encoded in a *new* file within the directory of the new
+edition, and it will be compiled to a new image file with the new prefix.
+
+### removed
+
+Examples that are not present anymore in the later edition can simply be
+ignored. There is no need for any encoding, and the example will simply not be
+used in the later edition.
+
+### corrections
