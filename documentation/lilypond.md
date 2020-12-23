@@ -155,15 +155,22 @@ regular system fonts on the machine compiling the examples with LilyPond.
 [Frescobaldi](https://frescobaldi.org) is arguably the most comprehensive
 editing environment for working with LilyPond.  While not technically a
 requirement it is *strongly* recommended to be used for editing the Leopold
-Mozart edition.  The main and most important feature is the Extension API added
-in Frescobaldi 3.1, which allows to load a custom extension written for the
-management of the large number of examples in the edition.  
+Mozart edition.  
+
+### Main Program
 
 Frescobaldi can be obtained from its [download
 page](https://frescobaldi.org/download) or through
 [Github](https://frescobaldi.org/download) where a
 [Wiki](https://github.com/frescobaldi/frescobaldi/wiki) describes
 (from-current-master-) installation on various operating systems.
+
+### Leopold Mozart Extension
+
+The main and most important feature is the Extension API added
+in Frescobaldi 3.1, which allows to load a custom extension written for the
+management of the large number of examples in the edition.  
+
 
 # File Organization Overview
 
