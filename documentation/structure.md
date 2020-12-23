@@ -207,21 +207,11 @@ edition's JSON file:
 **corrections**
 
 A number of examples *only* differ with regard to errors in the various
-editions.^[Für diesen Typ mache ich an dieser Stelle nochmals einen alternativen
-Vorschlag gegenüber unseren Mails vom 08.  und 13.08.  Mir erscheint die
-Bezeichnung “differing” für Beispiele, die sich durch Korrekturen in die eine
-oder andere Richtung unterscheiden, nicht völlig klar, v.a.  im Unterschied zu
-”modified”.  Ich würde es bevorzugen, Beispiele, die sich *nur* durch
-Korrekturen unterscheiden, klar als solche zu benennen, während Beispiele, die
-(auch!) musikalische Varianten beinhalten, deutlicher davon abzugrenzen.  Ich
-werde im nächsten Abschnitt die Bezeichnung “modified” verwenden, könnte mir
-aber auch “variants” vorstellen.  Wichtig ist, dass diese Überlegung
-ausschließlich die Codierung (im JSON wie in LilyPond) und *nicht* das Rendering
-betrifft.] In most cases this means that errors present in the earlier
+editions.  In most cases this means that errors present in the earlier
 (original) editions have been fixed in a later edition, aligning the later
 edition with the results from our new edition.  However it is also possible that
-the later edition introduces new errors, or that *some* errors are fixed *and* new
-errors introduced in the same example.  Examples that differ *only* in their
+the later edition introduces new errors, or that *some* errors are fixed *and*
+new errors introduced in the same example.  Examples that differ *only* in their
 correctness are documented like this:
 
 ```json
@@ -232,17 +222,17 @@ correctness are documented like this:
 }
 ```
 
-**modified**
+**variants**
 
 Some examples show “real”, i.e.  musical variants in later editions.  These
-examples are labeled as “modified”, which is also applied if the later edition
-includes variants *and* corrections:
+examples are labeled as including variants, which is also applied if the later
+edition includes variants *and* corrections:
 
 ```json
 {
   "1769_043_1": {
     "basedon": "1756_043_1",
-    "relation": "modified"
+    "relation": "variants"
   }
 }
 ```
@@ -261,3 +251,4 @@ different example relations will be discussed in the following section, while
 the *encoding* and technical aspects are documented in a separate document
 intended for contributors.
 
+# Rendering Scores from Examples
