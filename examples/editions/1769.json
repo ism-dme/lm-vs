@@ -491,7 +491,7 @@
   },
   "1769_043_1": {
     "basedon": "1756_043_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_043_1.ly",
     "has_include": false,
     "entered": false,
@@ -621,7 +621,7 @@
   },
   "1769_047_2": {
     "basedon": "1756_046_3",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_046_3.ly",
     "has_include": "1756/1756_046_3-include.ily",
     "entered": false,
@@ -631,7 +631,7 @@
   },
   "1769_047_3": {
     "basedon": "1756_046_4",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_046_4.ly",
     "has_include": false,
     "entered": false,
@@ -641,7 +641,7 @@
   },
   "1769_047_4": {
     "basedon": "1756_046_5",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_046_5.ly",
     "has_include": "1756/1756_046_5-include.ily",
     "entered": false,
@@ -811,7 +811,7 @@
   },
   "1769_065_4": {
     "basedon": "1756_062_3h",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_062_3h.ly",
     "has_include": "1756/1756_062_3h-include.ily",
     "entered": false,
@@ -841,7 +841,7 @@
   },
   "1769_065_7": {
     "basedon": "1756_062_3k",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_062_3k.ly",
     "has_include": "1756/1756_062_3k-include.ily",
     "entered": false,
@@ -971,7 +971,7 @@
   },
   "1769_073_4": {
     "basedon": "1756_071_4",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_071_4.ly",
     "has_include": "1756/1756_071_4-include.ily",
     "entered": false,
@@ -991,7 +991,7 @@
   },
   "1769_074_2": {
     "basedon": "1756_072_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_072_1.ly",
     "has_include": "1756/1756_072_1-include.ily",
     "entered": false,
@@ -1001,7 +1001,7 @@
   },
   "1769_074_3": {
     "basedon": "1756_072_2",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_072_2.ly",
     "has_include": "1756/1756_072_2-include.ily",
     "entered": false,
@@ -1031,7 +1031,7 @@
   },
   "1769_074_6": {
     "basedon": "1756_072_5",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_072_5.ly",
     "has_include": "1756/1756_072_5-include.ily",
     "entered": false,
@@ -1041,7 +1041,7 @@
   },
   "1769_075_1": {
     "basedon": "1756_072_6",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_072_6.ly",
     "has_include": "1756/1756_072_6-include.ily",
     "entered": false,
@@ -1081,7 +1081,7 @@
   },
   "1769_075_5": {
     "basedon": "1756_073_4",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_073_4.ly",
     "has_include": "1756/1756_073_4-include.ily",
     "entered": false,
@@ -1101,7 +1101,7 @@
   },
   "1769_075_7": {
     "basedon": "1756_073_6",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_073_6.ly",
     "has_include": "1756/1756_073_6-include.ily",
     "entered": false,
@@ -1141,7 +1141,7 @@
   },
   "1769_077_1": {
     "basedon": "1756_075_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_075_1.ly",
     "has_include": "1756/1756_075_1-include.ily",
     "entered": false,
@@ -1171,7 +1171,7 @@
   },
   "1769_078_2": {
     "basedon": "1756_076_2",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_076_2.ly",
     "has_include": "1756/1756_076_2-include.ily",
     "entered": false,
@@ -1191,7 +1191,7 @@
   },
   "1769_078_4": {
     "basedon": "1756_076_4",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_076_4.ly",
     "has_include": "1756/1756_076_4-include.ily",
     "entered": false,
@@ -1211,7 +1211,7 @@
   },
   "1769_078_6": {
     "basedon": "1756_076_6",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_076_6.ly",
     "has_include": "1756/1756_076_6-include.ily",
     "entered": false,
@@ -1231,7 +1231,7 @@
   },
   "1769_079_2": {
     "basedon": "1756_077_2",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_077_2.ly",
     "has_include": "1756/1756_077_2-include.ily",
     "entered": false,
@@ -1241,7 +1241,7 @@
   },
   "1769_079_3": {
     "basedon": "1756_077_3",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_077_3.ly",
     "has_include": "1756/1756_077_3-include.ily",
     "entered": true,
@@ -1251,7 +1251,7 @@
   },
   "1769_079_4": {
     "basedon": "1756_077_4",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_077_4.ly",
     "has_include": "1756/1756_077_4-include.ily",
     "entered": false,
@@ -1261,7 +1261,7 @@
   },
   "1769_079_5": {
     "basedon": "1756_077_5",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_077_5.ly",
     "has_include": "1756/1756_077_5-include.ily",
     "entered": false,
@@ -1281,7 +1281,7 @@
   },
   "1769_080_1": {
     "basedon": "1756_078_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_078_1.ly",
     "has_include": "1756/1756_078_1-include.ily",
     "entered": false,
@@ -1291,7 +1291,7 @@
   },
   "1769_080_2": {
     "basedon": "1756_078_2",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_078_2.ly",
     "has_include": "1756/1756_078_2-include.ily",
     "entered": false,
@@ -1301,7 +1301,7 @@
   },
   "1769_080_3": {
     "basedon": "1756_078_3",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_078_3.ly",
     "has_include": "1756/1756_078_3-include.ily",
     "entered": false,
@@ -1311,7 +1311,7 @@
   },
   "1769_081_1": {
     "basedon": "1756_079_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_079_1.ly",
     "has_include": "1756/1756_079_1-include.ily",
     "entered": false,
@@ -1321,7 +1321,7 @@
   },
   "1769_081_2": {
     "basedon": "1756_079_2",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_079_2.ly",
     "has_include": "1756/1756_079_2-include.ily",
     "entered": false,
@@ -1361,7 +1361,7 @@
   },
   "1769_082_2": {
     "basedon": "1756_080_2",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_080_2.ly",
     "has_include": "1756/1756_080_2-include.ily",
     "entered": false,
@@ -1371,7 +1371,7 @@
   },
   "1769_082_3": {
     "basedon": "1756_080_3",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_080_3.ly",
     "has_include": "1756/1756_080_3-include.ily",
     "entered": false,
@@ -1381,7 +1381,7 @@
   },
   "1769_083_1": {
     "basedon": "1756_081_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_081_1.ly",
     "has_include": "1756/1756_081_1-include.ily",
     "entered": false,
@@ -1461,7 +1461,7 @@
   },
   "1769_085_1": {
     "basedon": "1756_083_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_083_1.ly",
     "has_include": "1756/1756_083_1-include.ily",
     "entered": false,
@@ -1471,7 +1471,7 @@
   },
   "1769_085_2": {
     "basedon": "1756_083_2",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_083_2.ly",
     "has_include": "1756/1756_083_2-include.ily",
     "entered": false,
@@ -1481,7 +1481,7 @@
   },
   "1769_085_3": {
     "basedon": "1756_083_3",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_083_3.ly",
     "has_include": "1756/1756_083_3-include.ily",
     "entered": false,
@@ -1491,7 +1491,7 @@
   },
   "1769_085_4": {
     "basedon": "1756_083_4",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_083_4.ly",
     "has_include": "1756/1756_083_4-include.ily",
     "entered": false,
@@ -1501,7 +1501,7 @@
   },
   "1769_085_5": {
     "basedon": "1756_083_5",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_083_5.ly",
     "has_include": false,
     "entered": false,
@@ -1511,7 +1511,7 @@
   },
   "1769_086_1": {
     "basedon": "1756_084_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_084_1.ly",
     "has_include": "1756/1756_084_1-include.ily",
     "entered": false,
@@ -1521,7 +1521,7 @@
   },
   "1769_086_2": {
     "basedon": "1756_084_2",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_084_2.ly",
     "has_include": "1756/1756_084_2-include.ily",
     "entered": false,
@@ -1551,7 +1551,7 @@
   },
   "1769_087_2": {
     "basedon": "1756_085_2",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_085_2.ly",
     "has_include": false,
     "entered": false,
@@ -1591,7 +1591,7 @@
   },
   "1769_088_2": {
     "basedon": "1756_086_2",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_086_2.ly",
     "has_include": "1756/1756_086_2-include.ily",
     "entered": true,
@@ -1601,7 +1601,7 @@
   },
   "1769_088_3": {
     "basedon": "1756_086_3",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_086_3.ly",
     "has_include": "1756/1756_086_3-include.ily",
     "entered": false,
@@ -1611,7 +1611,7 @@
   },
   "1769_088_4": {
     "basedon": "1756_086_4",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_086_4.ly",
     "has_include": "1756/1756_086_4-include.ily",
     "entered": false,
@@ -1661,7 +1661,7 @@
   },
   "1769_094_1": {
     "basedon": "1756_092_1",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_092_1.ly",
     "has_include": "1756/1756_092_1-include.ily",
     "entered": true,
@@ -1901,7 +1901,7 @@
   },
   "1769_118_2": {
     "basedon": "1756_118_1",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_118_1.ly",
     "has_include": "1756/1756_118_1-include.ily",
     "entered": true,
@@ -1931,7 +1931,7 @@
   },
   "1769_119_3": {
     "basedon": "1756_119_1",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_119_1.ly",
     "has_include": "1756/1756_119_1-include.ily",
     "entered": true,
@@ -2031,7 +2031,7 @@
   },
   "1769_125_3": {
     "basedon": "1756_124_3",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_124_3.ly",
     "has_include": "1756/1756_124_3-include.ily",
     "entered": true,
@@ -2051,7 +2051,7 @@
   },
   "1769_126_2": {
     "basedon": "1756_125_2",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_125_2.ly",
     "has_include": "1756/1756_125_2-include.ily",
     "entered": true,
@@ -2061,7 +2061,7 @@
   },
   "1769_126_3": {
     "basedon": "1756_125_3",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_125_3.ly",
     "has_include": "1756/1756_125_3-include.ily",
     "entered": false,
@@ -2161,7 +2161,7 @@
   },
   "1769_130_2": {
     "basedon": "1756_129_2",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_129_2.ly",
     "has_include": "1756/1756_129_2-include.ily",
     "entered": false,
@@ -2241,7 +2241,7 @@
   },
   "1769_132_4": {
     "basedon": "1756_131_4",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_131_4.ly",
     "has_include": "1756/1756_131_4-include.ily",
     "entered": true,
@@ -2391,7 +2391,7 @@
   },
   "1769_134_5": {
     "basedon": "1756_133_3",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_133_3.ly",
     "has_include": "1756/1756_133_3-include.ily",
     "entered": true,
@@ -2451,7 +2451,7 @@
   },
   "1769_135_4": {
     "basedon": "1756_134_2",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_134_2.ly",
     "has_include": "1756/1756_134_2-include.ily",
     "entered": true,
@@ -2981,7 +2981,7 @@
   },
   "1769_151_1": {
     "basedon": "1756_150_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_150_1.ly",
     "has_include": "1756/1756_150_1-include.ily",
     "entered": false,
@@ -3001,7 +3001,7 @@
   },
   "1769_151_3": {
     "basedon": "1756_150_3",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_150_3.ly",
     "has_include": "1756/1756_150_3-include.ily",
     "entered": false,
@@ -3031,7 +3031,7 @@
   },
   "1769_152_2": {
     "basedon": "1756_151_2",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_151_2.ly",
     "has_include": false,
     "entered": true,
@@ -3151,7 +3151,7 @@
   },
   "1769_156_1": {
     "basedon": "1756_155_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_155_1.ly",
     "has_include": "1756/1756_155_1-include.ily",
     "entered": false,
@@ -3171,7 +3171,7 @@
   },
   "1769_156_3": {
     "basedon": "1756_155_3",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_155_3.ly",
     "has_include": "1756/1756_155_3-include.ily",
     "entered": false,
@@ -3181,7 +3181,7 @@
   },
   "1769_157_1": {
     "basedon": "1756_156_1",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_156_1.ly",
     "has_include": "1756/1756_156_1-include.ily",
     "entered": true,
@@ -3391,7 +3391,7 @@
   },
   "1769_163_7": {
     "basedon": "1756_162_7",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_162_7.ly",
     "has_include": false,
     "entered": true,
@@ -3651,7 +3651,7 @@
   },
   "1769_171_3": {
     "basedon": "1756_170_3",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_170_3.ly",
     "has_include": false,
     "entered": true,
@@ -3811,7 +3811,7 @@
   },
   "1769_178_1": {
     "basedon": "1756_176_2",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_176_2.ly",
     "has_include": "1756/1756_176_2-include.ily",
     "entered": false,
@@ -3851,7 +3851,7 @@
   },
   "1769_179_2": {
     "basedon": "1756_178_1",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_178_1.ly",
     "has_include": "1756/1756_178_1-include.ily",
     "entered": true,
@@ -3951,7 +3951,7 @@
   },
   "1769_183_2": {
     "basedon": "1756_182_1",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_182_1.ly",
     "has_include": "1756/1756_182_1-include.ily",
     "entered": true,
@@ -4051,7 +4051,7 @@
   },
   "1769_187_1": {
     "basedon": "1756_185_3",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_185_3.ly",
     "has_include": "1756/1756_185_3-include.ily",
     "entered": true,
@@ -4081,7 +4081,7 @@
   },
   "1769_187_4": {
     "basedon": "1756_186_3",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_186_3.ly",
     "has_include": "1756/1756_186_3-include.ily",
     "entered": true,
@@ -4101,7 +4101,7 @@
   },
   "1769_188_2": {
     "basedon": "1756_187_2",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_187_2.ly",
     "has_include": "1756/1756_187_2-include.ily",
     "entered": false,
@@ -4121,7 +4121,7 @@
   },
   "1769_189_2": {
     "basedon": "1756_188_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_188_1.ly",
     "has_include": "1756/1756_188_1-include.ily",
     "entered": false,
@@ -4241,7 +4241,7 @@
   },
   "1769_195_1": {
     "basedon": "1756_194_1",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_194_1.ly",
     "has_include": false,
     "entered": true,
@@ -4261,7 +4261,7 @@
   },
   "1769_195_3": {
     "basedon": "1756_194_2b",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_194_2b.ly",
     "has_include": "1756/1756_194_2b-include.ily",
     "entered": true,
@@ -4541,7 +4541,7 @@
   },
   "1769_201_3": {
     "basedon": "1756_200_3",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_200_3.ly",
     "has_include": "1756/1756_200_3-include.ily",
     "entered": true,
@@ -4561,7 +4561,7 @@
   },
   "1769_203_1": {
     "basedon": "1756_202_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_202_1.ly",
     "has_include": "1756/1756_202_1-include.ily",
     "entered": false,
@@ -4591,7 +4591,7 @@
   },
   "1769_204_1": {
     "basedon": "1756_202_3",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_202_3.ly",
     "has_include": "1756/1756_202_3-include.ily",
     "entered": false,
@@ -4681,7 +4681,7 @@
   },
   "1769_206_2": {
     "basedon": "1756_205_1",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_205_1.ly",
     "has_include": "1756/1756_205_1-include.ily",
     "entered": true,
@@ -4871,7 +4871,7 @@
   },
   "1769_210_4": {
     "basedon": "1756_208_2c",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_208_2c.ly",
     "has_include": "1756/1756_208_2c-include.ily",
     "entered": true,
@@ -4891,7 +4891,7 @@
   },
   "1769_210_6": {
     "basedon": "1756_208_2e",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_208_2e.ly",
     "has_include": "1756/1756_208_2e-include.ily",
     "entered": true,
@@ -4921,7 +4921,7 @@
   },
   "1769_213_1": {
     "basedon": "1756_211_3",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_211_3.ly",
     "has_include": "1756/1756_211_3-include.ily",
     "entered": true,
@@ -5351,7 +5351,7 @@
   },
   "1769_227_3": {
     "basedon": "1756_224_1",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_224_1.ly",
     "has_include": false,
     "entered": true,
@@ -5401,7 +5401,7 @@
   },
   "1769_228_3": {
     "basedon": "1756_225_2",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_225_2.ly",
     "has_include": "1756/1756_225_2-include.ily",
     "entered": true,
@@ -5421,7 +5421,7 @@
   },
   "1769_229_2": {
     "basedon": "1756_226_1",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_226_1.ly",
     "has_include": "1756/1756_226_1-include.ily",
     "entered": true,
@@ -5451,7 +5451,7 @@
   },
   "1769_230_2": {
     "basedon": "1756_226_4",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_226_4.ly",
     "has_include": "1756/1756_226_4-include.ily",
     "entered": false,
@@ -5671,7 +5671,7 @@
   },
   "1769_236_2": {
     "basedon": "1756_232_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_232_1.ly",
     "has_include": "1756/1756_232_1-include.ily",
     "entered": false,
@@ -5681,7 +5681,7 @@
   },
   "1769_236_3": {
     "basedon": "1756_232_2",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_232_2.ly",
     "has_include": "1756/1756_232_2-include.ily",
     "entered": false,
@@ -5691,7 +5691,7 @@
   },
   "1769_237_1": {
     "basedon": "1756_232_3",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_232_3.ly",
     "has_include": "1756/1756_232_3-include.ily",
     "entered": false,
@@ -5701,7 +5701,7 @@
   },
   "1769_237_2": {
     "basedon": "1756_232_4",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_232_4.ly",
     "has_include": "1756/1756_232_4-include.ily",
     "entered": false,
@@ -5711,7 +5711,7 @@
   },
   "1769_237_3": {
     "basedon": "1756_232_5",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_232_5.ly",
     "has_include": "1756/1756_232_5-include.ily",
     "entered": false,
@@ -5721,7 +5721,7 @@
   },
   "1769_237_4": {
     "basedon": "1756_233_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_233_1.ly",
     "has_include": "1756/1756_233_1-include.ily",
     "entered": false,
@@ -5731,7 +5731,7 @@
   },
   "1769_237_5": {
     "basedon": "1756_233_2",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_233_2.ly",
     "has_include": "1756/1756_233_2-include.ily",
     "entered": false,
@@ -5741,7 +5741,7 @@
   },
   "1769_237_6": {
     "basedon": "1756_233_3",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_233_3.ly",
     "has_include": "1756/1756_233_3-include.ily",
     "entered": false,
@@ -5751,7 +5751,7 @@
   },
   "1769_237_7": {
     "basedon": "1756_233_4",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_233_4.ly",
     "has_include": "1756/1756_233_4-include.ily",
     "entered": false,
@@ -5761,7 +5761,7 @@
   },
   "1769_237_8": {
     "basedon": "1756_233_5",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_233_5.ly",
     "has_include": "1756/1756_233_5-include.ily",
     "entered": false,
@@ -5771,7 +5771,7 @@
   },
   "1769_237_9": {
     "basedon": "1756_233_6",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_233_6.ly",
     "has_include": "1756/1756_233_6-include.ily",
     "entered": false,
@@ -5781,7 +5781,7 @@
   },
   "1769_237_10": {
     "basedon": "1756_233_7",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_233_7.ly",
     "has_include": "1756/1756_233_7-include.ily",
     "entered": false,
@@ -5791,7 +5791,7 @@
   },
   "1769_238_1": {
     "basedon": "1756_233_8",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_233_8.ly",
     "has_include": "1756/1756_233_8-include.ily",
     "entered": false,
@@ -5801,7 +5801,7 @@
   },
   "1769_238_2": {
     "basedon": "1756_233_9",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_233_9.ly",
     "has_include": "1756/1756_233_9-include.ily",
     "entered": false,
@@ -5811,7 +5811,7 @@
   },
   "1769_238_3": {
     "basedon": "1756_233_10",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_233_10.ly",
     "has_include": "1756/1756_233_10-include.ily",
     "entered": false,
@@ -5821,7 +5821,7 @@
   },
   "1769_238_4": {
     "basedon": "1756_234_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_234_1.ly",
     "has_include": "1756/1756_234_1-include.ily",
     "entered": false,
@@ -5831,7 +5831,7 @@
   },
   "1769_238_5": {
     "basedon": "1756_234_2",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_234_2.ly",
     "has_include": "1756/1756_234_2-include.ily",
     "entered": false,
@@ -5841,7 +5841,7 @@
   },
   "1769_238_6": {
     "basedon": "1756_234_3",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_234_3.ly",
     "has_include": "1756/1756_234_3-include.ily",
     "entered": false,
@@ -5851,7 +5851,7 @@
   },
   "1769_238_7": {
     "basedon": "1756_234_4",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_234_4.ly",
     "has_include": "1756/1756_234_4-include.ily",
     "entered": false,
@@ -5861,7 +5861,7 @@
   },
   "1769_238_8": {
     "basedon": "1756_234_5",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_234_5.ly",
     "has_include": "1756/1756_234_5-include.ily",
     "entered": false,
@@ -5871,7 +5871,7 @@
   },
   "1769_239_1": {
     "basedon": "1756_234_6",
-    "relation": "corrected",
+    "relation": "corrections",
     "has_file": "1756/1756_234_6.ly",
     "has_include": "1756/1756_234_6-include.ily",
     "entered": true,
@@ -6131,7 +6131,7 @@
   },
   "1769_249_1": {
     "basedon": "1756_244_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_244_1.ly",
     "has_include": false,
     "entered": false,
@@ -6141,7 +6141,7 @@
   },
   "1769_249_2": {
     "basedon": "1756_244_2",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_244_2.ly",
     "has_include": false,
     "entered": false,
@@ -6561,7 +6561,7 @@
   },
   "1769_268_1": {
     "basedon": "1756_264_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "1756/1756_264_1.ly",
     "has_include": "1756/1756_264_1-include.ily",
     "entered": false,
