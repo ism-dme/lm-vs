@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../business/projects/lm-vs-ly"
+		},
+		{
+			"path": "../../../frescobaldi/frescobaldi"
+		},
+		{
+			"path": "../../../frescobaldi/extensions/lm-vs-frescobaldi-extension"
+		}
+	],
+	"settings": {}
+}
