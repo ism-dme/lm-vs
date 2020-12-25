@@ -255,7 +255,7 @@ separate document intended for contributors.
 
 The following subsections are a draft as basis for discussion.
 
-### equal
+## equal
 
 Examples with relation “equal” have the same input, including errors and
 emendations. Therefore these examples don't need to be re-encoded at all: They
@@ -271,16 +271,24 @@ it is better to have redundant files, but with a proper location-name, or to
 use the ”original” file name at the ”wrong” place, indicating the actual
 relationship. This issue does not only affect the prefix but also differing page locations.
 
-### new
+## new
 
 New examples are completely independent from the `1756` edition. Any such
 example will have to be encoded in a *new* file within the directory of the new
 edition, and it will be compiled to a new image file with the new prefix.
 
-### removed
+## removed
 
 Examples that are not present anymore in the later edition can simply be
 ignored. There is no need for any encoding, and the example will simply not be
 used in the later edition.
 
-### corrections
+## corrections
+
+*Gehe ich gehe recht davon aus, dass für diese Beispiele _keine_ visuelle
+_Darstellung_ der Unterschiede zwischen den Ausgaben erforderlich ist?  Ich
+stelle mir vor, dass in jeder Edition nur der jeweilige Textstand wiedergegeben
+wird, mit den _für die aktuelle Edition erforderlichen_ Emendationen der
+Neuausgabe in grau hervorgehoben.*
+
+## variants
