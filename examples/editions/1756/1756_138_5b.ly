@@ -7,6 +7,7 @@
 
 \relative {
   \exampleIndex "b"
+  \criticalRemark "Im Druck keine Taktangabe"
   \time 4/4
   \key a \major
   \time 4/4

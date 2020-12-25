@@ -3,17 +3,13 @@
   Include file
 %}
 
-\version "2.19.80"
+\version "2.20"
 
 %TODO: Sollte das in edition-engraver-mod konvertiert werden?
 \layout {
   \context {
     \Voice
     \override TextScript.staff-padding = 4
-  }
-  \context {
-    \Staff
-    \omit TimeSignature
   }
   \context {
     \Score

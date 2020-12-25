@@ -17,7 +17,7 @@
   fis gis fis gis fis ]
   ^"Anwachsende Stärke."
   gis32 [ fis gis fis gis fis gis fis gis fis gis 
-  ^"Mittlere Stärke."
+  ^"Mittere Stärke."
   fis ]
   gis64  [ fis gis fis gis fis gis fis gis fis gis fis gis fis gis fis ]
   \bar ""

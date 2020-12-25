@@ -241,7 +241,7 @@ lower = {
 
   \annotateCenteredMusic \with {
     above = "Eine dreyfache, oder 32theilsospir."
-    below = "Gilt so viel als eine 32heilnote."
+    below = "Gilt so viel als eine 32theilnote."
   }{
     r32
   }

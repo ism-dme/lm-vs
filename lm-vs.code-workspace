@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../frescobaldi/extensions/lm-vs-frescobaldi-extension"
+		},
+		{
+			"path": "../../../lilypond/frescobaldi"
+		}
+	],
+	"settings": {}
+}

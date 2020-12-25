@@ -3,7 +3,7 @@
   Include file
 %}
 
-\version "2.19.80"
+\version "2.20"
 
 \loadTool brackets
 \loadTool center
