@@ -1,7 +1,7 @@
 {
   "briefe_BD_03_NBsp_1": {
     "basedon": "1756_026_2",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_03_NBsp_1.ly",
     "has_include": "briefe/briefe_BD_03_NBsp_1-include.ily",
     "entered": true,
@@ -11,7 +11,7 @@
   },
   "briefe_BD_12_NBsp_1": {
     "basedon": "1756_024_2",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_12_NBsp_1.ly",
     "has_include": "briefe/briefe_BD_12_NBsp_1-include.ily",
     "entered": true,
@@ -91,7 +91,7 @@
   },
   "briefe_BD_25_NBsp_1": {
     "basedon": "1756_076_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_25_NBsp_1.ly",
     "has_include": false,
     "entered": true,
@@ -101,7 +101,7 @@
   },
   "briefe_BD_25_NBsp_2": {
     "basedon": "1756_076_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_25_NBsp_2.ly",
     "has_include": "briefe/briefe_BD_25_NBsp_2-include.ily",
     "entered": true,
@@ -111,7 +111,7 @@
   },
   "briefe_BD_25_NBsp_3": {
     "basedon": "1756_078_2",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_25_NBsp_3.ly",
     "has_include": "briefe/briefe_BD_25_NBsp_3-include.ily",
     "entered": true,
@@ -121,7 +121,7 @@
   },
   "briefe_BD_25_NBsp_4": {
     "basedon": "1756_079_2",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_25_NBsp_4.ly",
     "has_include": "briefe/briefe_BD_25_NBsp_4-include.ily",
     "entered": true,
@@ -131,7 +131,7 @@
   },
   "briefe_BD_26_NBsp_1": {
     "basedon": "1756_081_3",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_26_NBsp_1.ly",
     "has_include": "briefe/briefe_BD_26_NBsp_1-include.ily",
     "entered": true,
@@ -141,7 +141,7 @@
   },
   "briefe_BD_26_NBsp_2": {
     "basedon": "1756_082_3",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_26_NBsp_2.ly",
     "has_include": false,
     "entered": true,
@@ -151,7 +151,7 @@
   },
   "briefe_BD_26_NBsp_3": {
     "basedon": "1756_090_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_26_NBsp_3.ly",
     "has_include": "briefe/briefe_BD_26_NBsp_3-include.ily",
     "entered": true,
@@ -161,7 +161,7 @@
   },
   "briefe_BD_26_NBsp_4": {
     "basedon": "1756_097_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_26_NBsp_4.ly",
     "has_include": false,
     "entered": true,
@@ -171,7 +171,7 @@
   },
   "briefe_BD_26_NBsp_5": {
     "basedon": "1756_100_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_26_NBsp_5.ly",
     "has_include": false,
     "entered": true,
@@ -181,7 +181,7 @@
   },
   "briefe_BD_26_NBsp_6": {
     "basedon": "1756_110_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_26_NBsp_6.ly",
     "has_include": "briefe/briefe_BD_26_NBsp_6-include.ily",
     "entered": true,
@@ -191,7 +191,7 @@
   },
   "briefe_BD_26_NBsp_7": {
     "basedon": "1756_111_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_26_NBsp_7.ly",
     "has_include": "briefe/briefe_BD_26_NBsp_7-include.ily",
     "entered": true,
@@ -201,7 +201,7 @@
   },
   "briefe_BD_26_NBsp_8": {
     "basedon": "1756_113_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_26_NBsp_8.ly",
     "has_include": "briefe/briefe_BD_26_NBsp_8-include.ily",
     "entered": true,
@@ -211,7 +211,7 @@
   },
   "briefe_BD_26_NBsp_9": {
     "basedon": "1756_114_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_26_NBsp_9.ly",
     "has_include": "briefe/briefe_BD_26_NBsp_9-include.ily",
     "entered": true,
@@ -221,7 +221,7 @@
   },
   "briefe_BD_26_NBsp_10": {
     "basedon": "1756_114_2",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_26_NBsp_10.ly",
     "has_include": "briefe/briefe_BD_26_NBsp_10-include.ily",
     "entered": true,
@@ -231,7 +231,7 @@
   },
   "briefe_BD_26_NBsp_11": {
     "basedon": "1756_116_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_26_NBsp_11.ly",
     "has_include": "briefe/briefe_BD_26_NBsp_11-include.ily",
     "entered": true,
@@ -241,7 +241,7 @@
   },
   "briefe_BD_26_NBsp_12": {
     "basedon": "1756_116_2",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_26_NBsp_12.ly",
     "has_include": "briefe/briefe_BD_26_NBsp_12-include.ily",
     "entered": true,
@@ -251,7 +251,7 @@
   },
   "briefe_BD_26_NBsp_13": {
     "basedon": "1756_117_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_26_NBsp_13.ly",
     "has_include": "briefe/briefe_BD_26_NBsp_13-include.ily",
     "entered": true,
@@ -261,7 +261,7 @@
   },
   "briefe_BD_26_NBsp_14": {
     "basedon": "1756_120_2",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_26_NBsp_14.ly",
     "has_include": "briefe/briefe_BD_26_NBsp_14-include.ily",
     "entered": true,
@@ -271,7 +271,7 @@
   },
   "briefe_BD_26_NBsp_15": {
     "basedon": "1756_121_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_26_NBsp_15.ly",
     "has_include": "briefe/briefe_BD_26_NBsp_15-include.ily",
     "entered": true,
@@ -291,7 +291,7 @@
   },
   "briefe_BD_26_NBsp_17": {
     "basedon": "1756_097_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_26_NBsp_17.ly",
     "has_include": "briefe/briefe_BD_26_NBsp_17-include.ily",
     "entered": true,
@@ -301,7 +301,7 @@
   },
   "briefe_BD_26_NBsp_18": {
     "basedon": "1756_072_2",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_26_NBsp_18.ly",
     "has_include": "briefe/briefe_BD_26_NBsp_18-include.ily",
     "entered": true,
@@ -311,7 +311,7 @@
   },
   "briefe_BD_28_NBsp_1": {
     "basedon": "1756_083_4",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_28_NBsp_1.ly",
     "has_include": false,
     "entered": true,
@@ -321,7 +321,7 @@
   },
   "briefe_BD_28_NBsp_2": {
     "basedon": "1756_086_3",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_28_NBsp_2.ly",
     "has_include": "briefe/briefe_BD_28_NBsp_2-include.ily",
     "entered": true,
@@ -331,7 +331,7 @@
   },
   "briefe_BD_29_NBsp_1": {
     "basedon": "1756_092_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_29_NBsp_1.ly",
     "has_include": "briefe/briefe_BD_29_NBsp_1-include.ily",
     "entered": true,
@@ -341,7 +341,7 @@
   },
   "briefe_BD_29_NBsp_2": {
     "basedon": "1756_092_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_BD_29_NBsp_2.ly",
     "has_include": "briefe/briefe_BD_29_NBsp_2-include.ily",
     "entered": true,
@@ -351,7 +351,7 @@
   },
   "briefe_ID_2657_NBsp_1": {
     "basedon": "1756_066_1",
-    "relation": "modified",
+    "relation": "variants",
     "has_file": "briefe/briefe_ID_2657_NBsp_1.ly",
     "has_include": "briefe/briefe_ID_2657_NBsp_1-include.ily",
     "entered": true,
