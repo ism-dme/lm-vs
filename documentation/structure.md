@@ -237,10 +237,58 @@ edition includes variants *and* corrections:
 }
 ```
 
----
 
-As mentioned the JSON files are both used as self-documentation of the various
-versions of our new edition.  In addition to this they serve as control
+# Encoding Examples in LilyPond Files
+
+This section gives a rather short, conceptual overview of how and where the music
+examples are encoded. More details, also about syntax and encoding techniques
+are explained in the separate “LilyPond” document.
+
+## Original Edition From 1756
+
+Each example in the original edition is -- as said above -- “based on” and
+“identical to” itself. Each example does *not* have variants but *may* have
+emendations, which are encoded as annotations. Therefore each example from
+`1756` is simply encoded in its own source file.
+
+## Later Editions
+
+Most examples from later editions (i.e. `1756`) are based on an example from
+`1756`, as documented in the later edition's JSON file. Any example which is
+based on a `1756` example is generally encoded within the `1756` base file.
+
+The single exception to this rule are “new” examples that are not based on any
+previous example. These are encoded in their own file within the “new”
+edition's directory. Example `1769_042_5` is encoded in the file
+`1769/1769_042_5.ly` rather than anywhere in the `1756` directory.
+
+**equal** /**equal** but moved
+
+As explained above all examples with equal input do *not* have to be touched
+again for encoding. Their difference is only relevant in the rendering stage,
+and only in the naming of the resulting image files. The infrastructure will
+pick the base source files automatically.
+
+**variants** / **corrections**
+
+Examples including “variants” expose intentional musical differences. These are
+encoded as readings within a `choice` construct. Up to four versions of image
+files are created for these examples (see below), using different coloring
+schemes to display the relation/difference between the editions.
+
+Examples including “corrections” expose (emended) errors that each occur in
+only *one* of the editions (it is possible that one error is in edition a) and
+another one in edition b), though).
+
+Emendations are encoded as annotations where they occur, and if that hapens to
+be in only one edition the annotation is encoded *within* the corresponding
+reading in the `choice`. As said above, details about the encoding are given in
+the “LilyPoind” document.
+
+# Rendering of Examples
+
+As mentioned above the JSON files are both used as self-documentation of the
+various versions of our new edition. In addition to this they serve as control
 structures for the *rendering* of examples in the different versions of our
 edition.  Basic differences are the number and naming of different image files
 fron one `1756` base file and the coloring of music and (our) emendations.
