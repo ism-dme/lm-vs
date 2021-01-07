@@ -297,45 +297,64 @@ edition. The basic differences and factors are:
 * The coloring schemes of created image files
 
 The basis for these decisions are the relations between the example versions
-outlined in the section above. The *conceptual* aspects of the encoding and
-rendering of different example relations will be discussed in the following
-section, while the *encoding* and technical aspects are documented in a
-separate document intended for contributors.
+outlined in the section above.  The *conceptual* aspects of the encoding have
+been discussed above, and the conceptual aspects of the rendering will be
+following below, while the actual *encoding* and technical aspects are
+documented in a separate document intended for contributors.
 
-## equal
+**equal**
 
-Examples with relation “equal” have the same input, including errors and
-emendations. Therefore these examples don't need to be re-encoded at all: They
-are in the `1756` base file, and the `1769` example simply refers to it through
-“basedon” in the JSON file.
+Examples with relation “equal” have the same content, including errors and
+emendations.  Therefore these examples don't need to be recompiled at all
+because the visual appearance is identical.
 
-The score rendering is identical, so conceptually no separate image files have
-to be compiled. But it has to be discussed whether separate equal files should
-be produced with the proper file names to be used in the respective
-editions.^[ActuaIf this is desired it should not be done through LilyPond but
-by creating a file copy in the OS.] It has to be discussed and decided whether
-it is better to have redundant files, but with a proper location-name, or to
-use the ”original” file name at the ”wrong” place, indicating the actual
-relationship. This issue does not only affect the prefix but also differing page locations.
+**TODO: This has to be discussed**.  It is not clear yet whether the example
+will be picked from the same file in both editions or if there should be a
+renamed copy.^[If this is desired it should not be done through LilyPond but by
+creating a file copy in the OS.] It has to be discussed and decided whether it
+is better to have redundant files, but with a proper location-name, or to use
+the ”original” file name at the ”wrong” place, indicating the actual
+relationship.  This issue does not only affect the prefix but also examples with
+differing differing page locations.
 
-## new
+**new**
 
-New examples are completely independent from the `1756` edition. Any such
-example will have to be encoded in a *new* file within the directory of the new
-edition, and it will be compiled to a new image file with the new prefix.
+New examples are completely independent from the `1756` edition.  Any such
+example will be rendered to a new image file with the example name from the
+newer edition, e.g.  `1769_218_3`.
 
-## removed
+**removed**
 
-Examples that are not present anymore in the later edition can simply be
-ignored. There is no need for any encoding, and the example will simply not be
-used in the later edition.
+Examples that are removed in the later edition can be ignored.  There will
+simply be just one rendered image file representing the `1756` example, and the
+example will simply not be used in the later edition.
 
-## corrections
+**corrections** and **variants**
 
-*Gehe ich gehe recht davon aus, dass für diese Beispiele _keine_ visuelle
-_Darstellung_ der Unterschiede zwischen den Ausgaben erforderlich ist?  Ich
-stelle mir vor, dass in jeder Edition nur der jeweilige Textstand wiedergegeben
-wird, mit den _für die aktuelle Edition erforderlichen_ Emendationen der
-Neuausgabe in grau hervorgehoben.*
+Examples exposing variants and corrections are the most complex issue because
+the various modes of displaying the editions require up to four different image
+files to be rendered from the sources, with differing names and colour schemes.
 
-## variants
+*variants*
+
+Examples vith musical variants are presented in four different ways, which makes
+it necessary to render four different image files.  File names are appended with
+`_<edition>`, where the prepended edition key indicates the base file, while the
+appendix indicates the edition the file is *used* in.
+
+1. Example from `1756` “as is”, i.e. without marking any differences. Emendations
+   are highlighted by grey colouring. The image file is named according to the base example
+   name, with `_1756` appended, e.g. `1756_043_1_1756`.
+2. Example from `1769` “as is”, i.e. without marking any differences. Emendations
+   are highlighted by grey colouring. The image file is named according to the base example
+   name, with `_1769` appended, e.g. `1756_043_1_1769`.
+3. Example for display in `1756`, with variants from `1769` highlighted. This is based on
+   the original example, but uses readings from `1769` where they differ. The 1769 readings
+   are highlighted in colour a). If there should be emendations *within* such a reading they
+   are highlighted in “grey” -- which in this case means a lighter shade of the used colour a).
+   The name is based on the base example name appended with `_1756-diff-1769` -- which indicates
+   a display of the `1756` edition with differing readings from the `1769` edition.
+4. Example for display in `1769`, with variants from `1756` highlighted. This is based on the
+   `1769` edition but uses and highlights readings from the `1756` edition. The file name is
+   based on the original example name with `_1769-diff-1756` appended (1769 version with
+   readings from 1756 highlighted).
