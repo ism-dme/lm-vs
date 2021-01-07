@@ -95,10 +95,10 @@ sections:
   either derived by the name of the base example or an empty string (if the example
   hasn't been encoded yet);
 * `"has_include"`: The basename of the -- optional -- LilyPond include file with non-content 
-  rendering instructions. This value is not encoded manually but determined from the
-  existence of the include file during the automatic conversion to the JSON file.^[NOTE:
-  There will have to be a mechanism to automatically update the dictionary when an
-  include file is added or removed, e.g. by the Frescobaldi extension.]
+  rendering instructions. This value is not encoded manually but has originally been#
+  determined from the existence of the include file during the automatic conversion
+  to the JSON file. The Fresacobaldi extension includes code to automatically update
+  the entry when new files are created.
 
 The remaining entries document the editing state of the example: These have to
 be updated during editing, ideally by the editing environment.
@@ -290,18 +290,17 @@ the “LilyPoind” document.
 As mentioned above the JSON files are both used as self-documentation of the
 various versions of our new edition. In addition to this they serve as control
 structures for the *rendering* of examples in the different versions of our
-edition.  Basic differences are the number and naming of different image files
-fron one `1756` base file and the coloring of music and (our) emendations.
+edition. The basic differences and factors are:
+
+* The decision and implementation of which readings to use for the LilyPond compilation(s).
+* The naming schemes of exported image file to be used in the edition display.
+* The coloring schemes of created image files
 
 The basis for these decisions are the relations between the example versions
-outlined in th section above. The *conceptual* aspects of the encoding and
+outlined in the section above. The *conceptual* aspects of the encoding and
 rendering of different example relations will be discussed in the following
 section, while the *encoding* and technical aspects are documented in a
 separate document intended for contributors.
-
-# Rendering Scores from Examples
-
-The following subsections are a draft as basis for discussion.
 
 ## equal
 
