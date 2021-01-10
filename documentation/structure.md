@@ -253,9 +253,14 @@ emendations, which are encoded as annotations. Therefore each example from
 
 ## Later Editions
 
-Most examples from later editions (i.e. `1756`) are based on an example from
-`1756`, as documented in the later edition's JSON file. Any example which is
+Most examples from later editions (i.e.  `1756`) are based on an example from
+`1756`, as documented in the later edition's JSON file.  Any example which is
 based on a `1756` example is generally encoded within the `1756` base file.
+Differences between examples in different editions are encoded as readings
+within a `\choice`.  If emendations are present within readings the are also
+encoded as annotations within that construct -- and in the rare case of the same
+emendation being present in multiple readings they will have to be encoded in
+each reading.
 
 The single exception to this rule are “new” examples that are not based on any
 previous example. These are encoded in their own file within the “new”
@@ -265,25 +270,24 @@ edition's directory. Example `1769_042_5` is encoded in the file
 **equal** /**equal** but moved
 
 As explained above all examples with equal input do *not* have to be touched
-again for encoding. Their difference is only relevant in the rendering stage,
-and only in the naming of the resulting image files. The infrastructure will
-pick the base source files automatically.
+again for encoding because their output is equal too.
 
 **variants** / **corrections**
 
-Examples including “variants” expose intentional musical differences. These are
-encoded as readings within a `choice` construct. Up to four versions of image
-files are created for these examples (see below), using different coloring
-schemes to display the relation/difference between the editions.
+Examples including “variants” expose intentional musical differences.  These are
+encoded as readings within a `choice` construct with the `source` entry pointing
+to the respective edition.  Up to four versions of image files are created for
+these examples (see below), using different coloring schemes to display the
+relation/difference between the editions.
 
 Examples including “corrections” expose (emended) errors that each occur in
 only *one* of the editions (it is possible that one error is in edition a) and
 another one in edition b), though).
 
-Emendations are encoded as annotations where they occur, and if that hapens to
+Emendations are encoded as annotations where they occur, and if that happens to
 be in only one edition the annotation is encoded *within* the corresponding
-reading in the `choice`. As said above, details about the encoding are given in
-the “LilyPoind” document.
+reading in the `choice`.  As said above, details about the encoding are given in
+the “LilyPond” document.
 
 # Rendering of Examples
 
@@ -308,14 +312,8 @@ Examples with relation “equal” have the same content, including errors and
 emendations.  Therefore these examples don't need to be recompiled at all
 because the visual appearance is identical.
 
-**TODO: This has to be discussed**.  It is not clear yet whether the example
-will be picked from the same file in both editions or if there should be a
-renamed copy.^[If this is desired it should not be done through LilyPond but by
-creating a file copy in the OS.] It has to be discussed and decided whether it
-is better to have redundant files, but with a proper location-name, or to use
-the ”original” file name at the ”wrong” place, indicating the actual
-relationship.  This issue does not only affect the prefix but also examples with
-differing differing page locations.
+The \textsc{xml} encoding of the edition will in any edition refer to the
+original base example.
 
 **new**
 
@@ -325,9 +323,9 @@ newer edition, e.g.  `1769_218_3`.
 
 **removed**
 
-Examples that are removed in the later edition can be ignored.  There will
-simply be just one rendered image file representing the `1756` example, and the
-example will simply not be used in the later edition.
+Examples that are removed in the later edition can be ignored.  There will be
+just one rendered image file representing the `1756` example, and the example
+will simply not be used in the later edition.
 
 **corrections** and **variants**
 
@@ -335,26 +333,27 @@ Examples exposing variants and corrections are the most complex issue because
 the various modes of displaying the editions require up to four different image
 files to be rendered from the sources, with differing names and colour schemes.
 
-*variants*
+Musical variants and corrections are treated equally, although there are minor
+differences in the appearance.  Examples with musical variants are presented in
+four different ways, which makes it necessary to render four different image
+files.  File names start with name of the base example and are appended with
+various markers indicating the version of the image.  We take `1756_043_1` as an
+example with musical variants.
 
-Examples vith musical variants are presented in four different ways, which makes
-it necessary to render four different image files.  File names are appended with
-`_<edition>`, where the prepended edition key indicates the base file, while the
-appendix indicates the edition the file is *used* in.
-
-1. Example from `1756` “as is”, i.e. without marking any differences. Emendations
-   are highlighted by grey colouring. The image file is named according to the base example
-   name, with `_1756` appended, e.g. `1756_043_1_1756`.
-2. Example from `1769` “as is”, i.e. without marking any differences. Emendations
-   are highlighted by grey colouring. The image file is named according to the base example
-   name, with `_1769` appended, e.g. `1756_043_1_1769`.
-3. Example for display in `1756`, with variants from `1769` highlighted. This is based on
-   the original example, but uses readings from `1769` where they differ. The 1769 readings
-   are highlighted in colour a). If there should be emendations *within* such a reading they
-   are highlighted in “grey” -- which in this case means a lighter shade of the used colour a).
-   The name is based on the base example name appended with `_1756-diff-1769` -- which indicates
-   a display of the `1756` edition with differing readings from the `1769` edition.
-4. Example for display in `1769`, with variants from `1756` highlighted. This is based on the
-   `1769` edition but uses and highlights readings from the `1756` edition. The file name is
+1. Display in the `1756` edition, without variants marked. This example is printed in black,
+   emendations would be printed in grey (in other examples that have emendations). The file
+   name is `1756_043_1_1756`, which is the base example name, appended with `_1756`,
+   indicating that it is *used* in the `1756` edition.
+2. Example version from `1769` “as is”, i.e. without marking any differences. Emendations
+   would be highlighted by grey colouring. The image file is named according to the base
+   example name, with `_1769` appended, i.e. `1756_043_1_1769`.
+3. Example for display in `1756`, with variants against `1769` highlighted. This uses the readings
+   from `1756` but highlights the notes where the 1769 readings differ by colouring them. If there
+   should be emendations *within* such a reading they are highlighted in “grey” -- which in this
+   case means a lighter shade of the used colour. The name is based on the base example name
+   but appended with `_1756-diff-1769` -- which indicates that it is used in the `1756` edition
+   but highlighting the differences against the `1769` edition: `1756_043_1_1756-diff-1769`.
+4. Example for display in `1769`, with variants against `1756` highlighted. This is based on the
+   `1769` edition but highlights readings where the `1756` edition differs. The file name is
    based on the original example name with `_1769-diff-1756` appended (1769 version with
-   readings from 1756 highlighted).
+   differences to the `1756` edition highlighted): `1756_043_1_1769-diff-1756`.
