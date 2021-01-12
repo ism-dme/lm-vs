@@ -4612,7 +4612,7 @@
   "1769_204_3": {
     "basedon": "",
     "relation": "new",
-    "has_file": false,
+    "has_file": "1769/1769_204_3.ly",
     "has_include": false,
     "entered": false,
     "review": false,
