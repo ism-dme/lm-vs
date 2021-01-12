@@ -482,10 +482,10 @@
   "1769_042_5": {
     "basedon": "",
     "relation": "new",
-    "has_file": false,
-    "has_include": false,
-    "entered": false,
-    "review": false,
+    "has_file": "1769/1769_042_5.ly",
+    "has_include": "1769/1769_042_5-include.ily",
+    "entered": true,
+    "review": true,
     "accepted": false,
     "rejected": false
   },
