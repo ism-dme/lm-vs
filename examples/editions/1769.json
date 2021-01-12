@@ -4572,7 +4572,7 @@
   "1769_203_2": {
     "basedon": "",
     "relation": "new",
-    "has_file": false,
+    "has_file": "1769/1769_203_2.ly",
     "has_include": false,
     "entered": false,
     "review": false,
