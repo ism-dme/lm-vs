@@ -52,6 +52,7 @@ current_example =
 %
 % critical annotations
 \loadModule scholarly.annotate
+\loadModule scholarly.choice
 % optionally visualize or apply original line breaks
 % NOTE: This hasn't been strictly encoded yet :-(
 \loadModule scholarly.diplomatic-line-breaks
