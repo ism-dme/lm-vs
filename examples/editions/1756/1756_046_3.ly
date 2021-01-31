@@ -16,7 +16,7 @@
   |
 
   \choice variants {
-    \editorialMarkup lemma \with {
+    \editorialMarkup reading \with {
       source = "1756" } {
         c8 [ c, ] r16 c' [ d e ]
 
@@ -36,12 +36,4 @@
         \doubleBar
     }
   }
-
-  |
-
-%  c8 [ g ] r16 d' [ e f ]
-
-  |
-
-%  \custos e
 }

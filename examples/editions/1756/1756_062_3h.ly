@@ -5,6 +5,8 @@
 \version "2.19.80"
 \include "../../library/init-edition.ily"
 
+\setOption scholarly.choice.preferences.variants "1756"
+
 upper = \relative {
   \time 8/4
   \key des \major
@@ -15,8 +17,19 @@ upper = \relative {
 
 lower = \relative {
   \key bes \minor
-  bes4 ^"(B) moll."
+  \choice variants {
+    \editorialMarkup reading \with {
+      source = "1756" } {
+        bes4 ^"Bes moll."
+        c des es f ges as bes
+    }
+  \editorialMarkup reading \with {
+    source = "1769"
+  } {
+    bes4 ^"Bes moll."
   c des es f ges as bes
+}
+  }
 }
 
 \loadTemplate two-systems

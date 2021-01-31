@@ -17,10 +17,10 @@
     \key d \major
     r32 d' [ ( e fis g a b cis ] ) 
 
-  |
+    |
 
     d8 [ a fis d ] a'8 [ a, ]
-    r32 d [ ( e fis g a b cis ] ) 
+    r32 d [ ( e fis g a b cis ] )
     
     |
     
@@ -37,7 +37,6 @@
     c8 [ e ] g4 r2
     
     \doubleBar
-    
+    }
   }
-}
 }
