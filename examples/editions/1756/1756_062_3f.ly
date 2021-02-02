@@ -14,12 +14,12 @@ upper = \relative {
     \editorialMarkup reading \with {
       source = "1756"
     } {
-  b' ^"(H) Dur." cis dis e fis gis ais b
+  b' ^"B oder H Dur." cis dis e fis gis ais b
     }
     \editorialMarkup reading \with {
       source = "1769"
     } {
-  b' ^"B oder H Dur."cis dis e fis gis ais b
+  b' ^"(B) oder H Dur."cis dis e fis gis ais b
     }
   }
   \doubleBar
