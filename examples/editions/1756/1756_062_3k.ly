@@ -5,7 +5,7 @@
 \version "2.19.80"
 \include "../../library/init-edition.ily"
 
-\setOption scholarly.choice.preferences.variants "1756"
+\setOption scholarly.choice.preferences.variants "1769"
 
 upper = \relative {
   \time 8/4
