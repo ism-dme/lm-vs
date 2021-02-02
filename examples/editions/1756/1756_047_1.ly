@@ -5,6 +5,8 @@
 \version "2.19.81"
 \include "../../library/init-edition.ily"
 
+\setOption scholarly.choice.preferences.variants "1756"
+
 \relative {
   \time 4/4
   \key cis \minor
