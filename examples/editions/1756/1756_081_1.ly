@@ -5,6 +5,8 @@
 \version "2.19.81"
 \include "../../library/init-edition.ily"
 
+\setOption scholarly.choice.preferences.variants "1769"
+
 \relative {
   \time 2/4
   \key c \major
@@ -22,6 +24,24 @@
 
   d8 [ e ] f4
   
+  \choice variants {
+    \editorialMarkup reading \with {
+      source = "1756"
+    }
+    {
+      
   \criticalRemark "Im Druck einfacher Taktstrich"
   \doubleBar
+    }
+    \editorialMarkup reading \with {
+      source = "1769"
+    }
+    {
+      r8 g4 ( f8 )
+      
+      |
+      
+      e8 [ d ] c4 \doubleBar
+    }
+  }
 }
