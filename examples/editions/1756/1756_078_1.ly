@@ -5,6 +5,8 @@
 \version "2.19.81"
 \include "../../library/init-edition.ily"
 
+\setOption scholarly.choice.preferences.variants "1769"
+
 \relative {
   \time 3/4
   \key c \major
@@ -16,6 +18,18 @@
   e16 [ d c b ] c [ b a gis ]
 
   |
-
-  \custos a
+  
+  \choice variants {
+    \editorialMarkup reading \with {
+      source = "1756"
+    } { \custos a }
+    \editorialMarkup reading \with {
+      source = "1769"
+    } {
+      
+      |
+      
+      a4 a, r \doubleBar
+    }
+  }
 }
