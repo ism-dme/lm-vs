@@ -1031,7 +1031,7 @@
   },
   "1769_074_6": {
     "basedon": "1756_072_5",
-    "relation": "variants",
+    "relation": "equal",
     "has_file": "1756/1756_072_5.ly",
     "has_include": "1756/1756_072_5-include.ily",
     "entered": false,
