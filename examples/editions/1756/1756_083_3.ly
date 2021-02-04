@@ -5,6 +5,7 @@
 \version "2.19.81"
 \include "../../library/init-edition.ily"
 
+\setOption scholarly.choice.preferences.variants "1769"
 \relative {
   \time 3/8
   \key c \major
@@ -20,10 +21,29 @@
 
   |
 
-  b'8 [ ^\strich g 
-  -\criticalRemark "Im Druck kein Strich"
+  
+  \choice variants {
+    \editorialMarkup reading \with {
+      source = "1756"
+    } 
+    { b'8 g d
+    }
+    \editorialMarkup reading \with {
+      source = "1769"
+    } { b'8 [ ^\strich g 
+  \strichb'8 [ ^\strich g 
   \strich
-  ( d ] ) ^\strich
-
-  \doubleBar
+  ( d ]
+      
+      f [ ( d ) g \strich ]
+      
+      e [ \strich b ( c ) ]
+      |
+      f, [ d \strich ( g \strich ] )
+      
+      |
+      
+      c,4.
+      \doubleBar }
+  }
 }
