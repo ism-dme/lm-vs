@@ -5,6 +5,8 @@
 \version "2.19.81"
 \include "../../library/init-edition.ily"
 
+\setOption scholarly.choice.preferences.variants "1756"
+
 \relative {
   \time 3/4
   \key c \major
@@ -17,15 +19,23 @@
   |
 
   c, ^\strich e, (
-  \criticalRemark \with {
-    message = "Auflösungszeichen ergänzt"
-    item = Accidental
-  }
-  f! )
+  f )
 
   |
 
   g \strich b, ( c )
-
-  \doubleBar
+  
+  \choice variants {
+    \editorialMarkup reading \with {
+      source = "1756"
+    } 
+    { d4 f' \strich ( a \strich )
+      g \strich b,( c ) \doubleBar
+    }
+    \editorialMarkup reading \with  {
+      source= "1769" 
+    } { d4 f' \strich ( a \strich )
+      g \strich b,( c ) \doubleBar
+    }
+  }  
 }
