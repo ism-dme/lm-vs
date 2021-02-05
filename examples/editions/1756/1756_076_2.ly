@@ -5,6 +5,8 @@
 \version "2.19.81"
 \include "../../library/init-edition.ily"
 
+\setOption scholarly.choice.preferences.variants "1769"
+
 \relative {
   \time 3/4
   \key c \major
@@ -14,12 +16,14 @@
 
   d8 [ f e d c b ] ^\strich ^\upbow
 
-  \criticalRemark \with {
-    message = "Im Druck doppelter Taktstrich"
-    item = Score.BarLine
-  }
-
   |
 
-  \custos c
+  \choice variants {
+    \editorialMarkup reading \with {
+      source = "1756"
+    } { \custos c }
+    \editorialMarkup reading \with {
+      source = "1769"
+    }{ c2 r4 \doubleBar }
+  }
 }
