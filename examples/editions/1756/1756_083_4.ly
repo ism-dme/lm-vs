@@ -5,14 +5,12 @@
 \version "2.19.81"
 \include "../../library/init-edition.ily"
 
+\setOption scholarly.choice.preferences.variants "1769"
+
 \relative {
   \time 3/4
   \key c \major
   g'4 _\strich b
-  -\criticalRemark \with {
-    author = "Leopold Mozart"
-    message = "Erratum 1"
-  }
   (
   ^\strich d ^\strich )
 
@@ -28,5 +26,15 @@
 
   b4 ^\strich fis ( g )
 
-  \doubleBar
+  \choice variants {
+  \editorialMarkup reading \with {
+    source= "1756"
+  } { \doubleBar }
+  \editorialMarkup reading \with {
+    source = "1769"
+  } {
+    e4 \strich c ( d) 
+    
+    b4 g r \doubleBar }
+}
 }
