@@ -23,11 +23,11 @@
     } { \custos e }
     \editorialMarkup reading \with {
       source = "1769"
-    } { e4 \strich e8 \strich [ c d f ]
+    } { e4 _\downbow \strich e8 _\downbow \strich [ c d f ]
         
         |
         
-        e4 \strich e8 \strich [ c d b ]
+        e4 \strich _\downbow e8 \strich _\downbow[ c d b ]
         
         |
         
