@@ -5,6 +5,8 @@
 \version "2.19.80"
 \include "../../library/init-edition.ily"
 
+\setOption scholarly.choice.prefereences.variants "1756"
+
 upper = {
   \startCenteredHeading "Octav."
   \centered c''1
