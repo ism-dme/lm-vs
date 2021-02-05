@@ -5,6 +5,8 @@
 \version "2.19.81"
 \include "../../library/init-edition.ily"
 
+\setOption scholarly.choice.preferences.variants "1769"
+
 \relative {
   \exampleNumber "2."
   \time 4/4
@@ -19,6 +21,14 @@
 
   |
 
-  \custos fis
+  \choice variants {
+    \editorialMarkup reading \with {
+      source = "1756"
+    } { \custos fis }
+  \editorialMarkup reading \with {
+    source = "1769"
+  } { fis4 r r2 \doubleBar }
+  
+}
 
 }
