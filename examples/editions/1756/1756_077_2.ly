@@ -5,8 +5,13 @@
 \version "2.19.81"
 \include "../../library/init-edition.ily"
 
+\setOption scholarly.choice.preferences.variants "1756"
+
 \relative {
-  \criticalRemark "Im Druck kein Schlüssel"
+%  \criticalRemark \with {
+%    Item = Staff.Clef
+%    message = "Im Druck kein Schlüssel"
+%  }
   \clef treble
   \time 2/4
   \key c \major
@@ -15,5 +20,13 @@
   |
 
   d4. e16 [ ( f ] )
-  \doubleBar
+  
+  \choice variants {
+    \editorialMarkup reading with {
+      source = "1756"
+    } { \doubleBar }
+    \editorialMarkup reading \with {
+      source = "1769"
+    } { e4 r4 \doubleBar }
+  }
 }
