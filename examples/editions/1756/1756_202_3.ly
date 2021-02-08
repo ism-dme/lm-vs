@@ -5,15 +5,17 @@
 \version "2.19.81"
 \include "../../library/init-edition.ily"
 
+\setOption scholarly.choice.preferences.variants "1769"
+
 \relative {
-  \exampleNumber "1."
+%  \exampleNumber "1."
   \time 2/4
   
   \key f \major
   \tuplet 3/2 {
     % TODO: Make this tweak work through the include file
-    \once \override Slur.height-limit = 3
-    \once \override Slur.ratio = 0.6
+%    \once \override Slur.height-limit = 3
+%    \once \override Slur.ratio = 0.6
     c''16 [ ( e, f )
   } f8. ]
   \appoggiatura { c'32 [ e ] } d16 [ \grace c32 bes16 \grace a32 g16 ]
@@ -37,5 +39,6 @@
   f4.
 
   \doubleBar
+}
 
 }
