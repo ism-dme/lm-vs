@@ -5,11 +5,29 @@
 \version "2.19.81"
 \include "../../library/init-edition.ily"
 
+\setOption scholarly.choice.preferences.variants "1769"
+
 one = \relative {
   \time 4/4
   \key c \major
-  d''8. -1 ( [ e16 ] d [ e d e ] ) \grace e8 d2 \t
+  d''8. -1 ( [ e16 ] d [ e d e ] )
+  \choice variants {
+    \editorialMarkup reading \with {
+      source = "1756"
+    } {
+  \grace e8 d2 \t e2
+    }
+    \editorialMarkup reading \with {
+      source = "1769"
+      } {
+      \grace e8
+      d2 \tr
+      \grace c32
 
+      |
+
+      <c, c'>2
+      }
   |
 
   e2 r
