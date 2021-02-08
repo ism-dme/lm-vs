@@ -4,6 +4,7 @@
 
 \version "2.19.81"
 \include "../../library/init-edition.ily"
+\setOption scholarly.choice.preferences.variants "1769"
 
 \relative {
   \time 2/4
