@@ -15,7 +15,12 @@
       |
 
       r16 f [ ( e ] d [ c b ] )
-      r16 g' [ ( fis ] g [ fis g ] )
+      r16 
+      \criticalRemark \with {
+        item = Accidental
+        message = "Im Druck kein Auflösungszeichen"
+      }
+      g'! [ ( fis ] g [ fis g ] )
   }
 
   |
