@@ -19,11 +19,9 @@
   \break
 
   \exampleIndex "b"
-  \criticalRemark "Im Druck kein Schlüssel"
   \clef treble
   \criticalRemark "Im Druck keine Taktangabe"
   \time 4/4
-  \criticalRemark "Im Druck keine Tonart"
   \key f \major
   a16 [ _\downbow ( f ) r c \strich _\upbow ] ( r d \strich [ r e, \strich ] )
   f16 [ _\downbow \( ( a ) a ( c ) ] \) c [ _\upbow \( ( f ) f ( a ) ] \)
