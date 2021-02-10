@@ -7,32 +7,29 @@
 
 \relative {
   \exampleNumber "13."
-  \criticalRemark "Im Druck 3/4. Die ersten drei Takte sind dort in Sechzehnteln notiert.
-                   Möglich wäre auch, dass das Beispiel bewusst im schnelleren Metrum
-                   gesetzt wurde, dann wäre allerdings der letzte Takt in drei
-                   Viertelwerte zu korrigieren"
-  \time 3/4
+  \time 3/8
   \key c \major
-  \criticalRemark \with {
-    message = "Im Druck Sechzehntelbalken"
-    item = Beam
-  } {
-    a''8 \strich [ ( g f e d c ]
+
+    a''16 \strich [ ( g f e d c ]
   
     |
   
-    d8 \strich [ c b a g f ]
+    d16 \strich [ c b a g f ]
   
     |
   
-    g8
+    g16
     -\criticalRemark "Strich fehlt im Druck."
     \strich [ f e d c b ) ]
   }
 
   |
 
-  c4 r r
+  \criticalRemark "Im Druck 3/4. Die ersten drei Takte sind dort in Sechzehnteln notiert.
+                   Möglich wäre auch, dass das Beispiel bewusst im schnelleren Metrum
+                   gesetzt wurde, dann wäre allerdings der letzte Takt in drei
+                   Viertelwerte zu korrigieren"
+  c'8 r r
 
   \doubleBar
 }
