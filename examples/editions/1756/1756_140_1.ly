@@ -21,6 +21,8 @@
   |
 
   e4 r
+  \doubleBar
+  
 
   \break
   
