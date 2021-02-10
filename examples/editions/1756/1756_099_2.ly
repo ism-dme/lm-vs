@@ -29,6 +29,10 @@ upper = \relative {
 
   |
 
+  \criticalRemark \with {
+    item = Accidental
+    message = "Im Druck kein Auflösungszeichen"
+  }
   b!8 [ g c ] d16 [ f e d c b ] c4. r4 r8
 
   \doubleBar
