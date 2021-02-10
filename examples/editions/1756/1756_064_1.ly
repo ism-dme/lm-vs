@@ -114,7 +114,7 @@ upper = {
   \centeredHeading "Die Octav." {
     \annotateCenteredMusic \with {
       below = \markup \sans "Octava."
-    } c''2
+    } c''1
   }
   \doubleBar
 }
