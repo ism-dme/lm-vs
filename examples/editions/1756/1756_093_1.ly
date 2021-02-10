@@ -86,7 +86,9 @@ upper = \relative {
 
   |
 
-  g8 ) [ fis a c, ]
+  g8 ) 
+  -\criticalRemark "Im Druck erste Note nicht gebunden, sondern mit Verlängerungspunkt."
+  [ fis a c, ]
 
   |
   \originalPageBreak
