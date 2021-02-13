@@ -5,6 +5,8 @@
 \version "2.19.80"
 \include "../../library/init-edition.ily"
 
+\setOption scholarly.choice.preferences.variants "1756"
+
 upper = \relative {
   \time 2/4
   \key c \major
@@ -67,11 +69,7 @@ upper = \relative {
 
     c8 [ c, ] r4
 
-    \criticalRemark \with {
-      message = "Im Druck doppelter Taktstrich ohne Wiederholungspunkte"
-      item = Score.BarLine
-    }
-    \bar ":|."
+    
   }
 }
 
@@ -128,8 +126,22 @@ lower = \relative {
 
     |
 
+    \choice variants {
+      \editorialMarkup reading \with {
+        source = "1756"
+      } {
     \criticalRemark "Im Druck fälschlich a"
-    c4 r
+    c4 r 
+      \criticalRemark \with {
+      message = "Im Druck doppelter Taktstrich ohne Wiederholungspunkte"
+      item = Score.BarLine
+    }
+    \bar ":|."}
+      \editorialMarkup reading \with {
+        source = "1769"
+      } {
+        c4 r \doubleBar }
+    }
   }
 }
 
