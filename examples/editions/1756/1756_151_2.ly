@@ -5,6 +5,7 @@
 \version "2.19.81"
 \include "../../library/init-edition.ily"
 
+\setOption scholarly.choice.preferences.variants "1769"
 \relative {
   \time 2/4
   \key d \major
@@ -18,7 +19,16 @@
 
   fis8 -4 [ a, -1 d -4 fis -2 ]
 
-  a8 -4 [ d, -4 \asterisk fis -2 a -4 ]
+  a8 -4 [ 
+  \choice variants {
+    \editorialMarkup reading \with {
+      source = "1756"
+    } { d, -4 \asterisk fis -2 a -4 ] }
+    \editorialMarkup reading \with {
+      source = "1769"
+    } {
+      d, -4 -\criticalRemark "Im Druck kein Stern." \asterisk  fis -2 a -4 ] }
+  }
 
   |
 
