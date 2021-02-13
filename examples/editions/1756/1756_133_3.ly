@@ -5,6 +5,8 @@
 \version "2.19.81"
 \include "../../library/init-edition.ily"
 
+\setOption scholarly.choice.preferences.variants "1756"
+
 \relative {
   \exampleNumber "23."
   \time 3/4
@@ -13,12 +15,21 @@
 
   |
 
-  d8 \strich [ _\upbow c 
-  -\criticalRemark "Kein Bogen in Vorlage" ( 
+  d8 \strich [ _\upbow 
+  \choice variants {
+    \editorialMarkup reading \with {
+      source = "1756"
+    } {
+  c 
+  -\criticalRemark "Kein Bogen in Vorlage" (
   b a g ) f 
-  -\criticalRemark "Kein Strich in Vorlage" \strich ]
+  -\criticalRemark "Kein Strich in Vorlage" \strich ]\strich ]} }
+
 
   |
+    \editorialMarkup reading \with {
+      source = "1769"
+    } {
 
   g8 \strich [ _\downbow f ( e  d c ) b \strich ]
 
@@ -26,5 +37,6 @@
 
   c4 r r
 
-  \doubleBar
+ \doubleBar
+    }
 }
