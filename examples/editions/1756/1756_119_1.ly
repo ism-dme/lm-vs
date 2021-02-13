@@ -5,6 +5,8 @@
 \version "2.19.81"
 \include "../../library/init-edition.ily"
 
+\setOption scholarly.choice.preferences.variants "1769"
+
 \relative {
   \time 2/4
   \partial 8
@@ -33,7 +35,16 @@
 
   |
 
-  c2
-
+  \choice variants {
+    \editorialMarkup reading \with {
+      source = "1756"
+    } { c2 }
+    \editorialMarkup reading \with {
+      source = "1769"
+    } {
+    \criticalRemark "Im Druck halbe Note."
+    c1*1/2
+    }
+  }
   \doubleBar
 }
