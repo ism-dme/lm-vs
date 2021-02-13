@@ -5,6 +5,8 @@
 \version "2.19.81"
 \include "../../library/init-edition.ily"
 
+\setOption scholarly.choice.preferences.variants "17"
+
 \relative {
   \tempo "Andante."
   \time 2/4
@@ -22,8 +24,18 @@
     |
 
     r16 b, \f _\strich [ _( d _\strich ]
+    \choice variants {
+      \editorialMarkup reading \with {
+        source = "1756"
+      } {
     \criticalRemark "Im Druck versehentlich h' statt g'. Vgl. das folgende Bsp."
-    g _\strich [ b _\strich d _\strich ] )
+    g _\strich [  }
+      \editorialMarkup reading \with {
+        source = "1769"
+      } {
+        g _\strich [ }
+    }
+      b _\strich d _\strich ] )
     r16 g \p ^\strich [ ( f ^\strich ] e ^\strich [ d ^\strich c ^\strich ] )
   }
 
