@@ -5,6 +5,8 @@
 \version "2.19.81"
 \include "../../library/init-edition.ily"
 
+\setOption scholarly.choice.preferences.variants "1756"
+
 \relative {
   \time 3/4
   \partial 8
@@ -12,12 +14,27 @@
   a''8
   
   |
+  \choice variants {
+    \editorialMarkup reading \with {
+      source = "1756"
+    } {
   
   \grace { 
     b32
     -\criticalRemark "Im Druck kein Bogen"
     ( [ a gis ] }
-    a8 ) [ gis!16 a ] b,8 [ a' ] 
+    a8 ) [ }
+    \editorialMarkup reading \with {
+      source = "1769"
+    } {
+    \appoggiatura { b32 [ a gis ] }
+    a8 [ }
+  }
+  gis16 a ] b,8 [ a' ]
+
+    
+                                     
+%    gis!16 a ] b,8 [ a' ] 
   \grace { b32 [ a gis ] } a8 [ gis16 a ]
   
   |
