@@ -5,6 +5,8 @@
 \version "2.19.81"
 \include "../../library/init-edition.ily"
 
+\setOption scholarly.choice.preferences.variants "1769"
+
 \relative {
   \tempo "Allegro."
   \criticalRemark "Im Druck kein Schlüssel."
@@ -14,9 +16,13 @@
 
   |
 
-  g8 ) [ g, \strich ] r g32 ( [ a b c ] d8 ) [ d, \strich ] r32 g ( [ a b c d e fis ]
-
-  |
-
-  \custos g )
+  g8 ) [ g, \strich ] r g32 ( [ a b c ] d8 ) [ d, \strich ] r32 
+  \choice variants {
+    \editorialMarkup reading \with {
+      source = "1756"
+    } { g ( [ a b c d e fis ] | \custos g )  }
+    \editorialMarkup reading \with {
+      source = "1769"
+    } { g ( [ a b c d e fis ] | g8 ) [ g, ] \strich r4 \doubleBar  }
+}
 }
