@@ -3,8 +3,19 @@
 %}
 
 \version "2.19.81"
-\include "library/init-1756.ily"
+\include "../../library/init-edition.ily"
 
 \relative {
+  \exampleNumber "(2)"
+  \criticalRemark "Im Druck keine Taktangabe."
+  \time 2/4
+  \criticalRemark "Im Druck kein Schlüssel."
+  \clef treble
+  \partial 8
+  f''8
+  
+  |
+  
+  f4
 
 }
