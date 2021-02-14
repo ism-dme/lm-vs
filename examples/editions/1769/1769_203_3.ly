@@ -6,12 +6,13 @@
 \include "../../library/init-edition.ily"
 
 \relative {
+  \exampleNumber "(3)"
   \time 3/4
   c''2 \appoggiatura {d16 [e ] } f4
   
   |
   
-  \grace f8 e2 \appoggiatura { f16 [ g ] } a4
+  \appoggiatura f8 e2 \appoggiatura { f16 [ g ] } a4
   
   |
   
