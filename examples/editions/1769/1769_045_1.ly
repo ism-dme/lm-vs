@@ -6,7 +6,7 @@
 \include "library/init-1756.ily"
 
 \relative {
-  g''8. f32 g a8 e f4 r4 \fermata
+  g''8. f32 g a8 e _"Hier wird länger stillgehalten´." f4 r4 \fermata
 
   |
 
@@ -18,7 +18,7 @@
   
   |
   
-  e8 c d b c4 r
+  e8 c d b c4 r _" Diese Pause wird nicht ausgehalten."
   
   |
   
