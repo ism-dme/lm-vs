@@ -15,22 +15,22 @@
   |
 
   r4 e ^\strich _\upbow r b ^\strich _\upbow
-  
+
   \choice variants {
     \editorialMarkup reading \with {
-      source = "1756" 
+      source = "1756"
     } { \bar "|" }
     \editorialMarkup reading \with {
       source = "1769"
     } { r4 c e g
-        
+
     |
-    
+
     r4 f r b,
-    
+
     | c c, r2
-    
+
     }
-    
+
   }
 }
