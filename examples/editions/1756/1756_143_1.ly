@@ -39,12 +39,10 @@
   \break
 
   \exampleIndex "c"
-  \criticalRemark "Im Druck kein Schlüssel"
   \clef treble
   \criticalRemark "Im Druck keine Taktangabe"
   \time 2/4
   \partial 4
-  \criticalRemark "Im Druck keine Tonart."
   \key d \major
   r8 a' _\upbow
 
