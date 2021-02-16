@@ -8,6 +8,7 @@
 \relative {
   \exampleNumber "3."
   \time 2/4
+  \criticalRemark "Im Druck keine Vorzeichen."
   \key d \major
   a''8 \strich [ fis16 ( e ) ] d8 [ d' ]
 
