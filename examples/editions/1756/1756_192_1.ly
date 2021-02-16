@@ -39,7 +39,8 @@ one = \relative {
 
 two = \scaleDurations 4 \relative {
   e'4 e e a, a a d b e a, a d g, c
-  c4 c f f f c a g d' d g a d,
+  c4 c f f f c a g d' d g 
+  \criticalRemark "Im Druck a'."e d
 }
 
 \loadTemplate two-voices
