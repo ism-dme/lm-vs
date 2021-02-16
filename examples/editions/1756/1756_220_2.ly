@@ -16,13 +16,8 @@
   
   \doubleBar
   
-  \criticalRemark \with {
-    message = "Im Druck jeweils ein Bogen über Vorschlag und bebalkte Noten"
-    item = Slur
-  } {
     \appoggiatura c16 bes8. ( [ \t a32 bes ] )
     \appoggiatura g'16 f8. ( [ \t es32 f ] )
-  }
   
   |
   
