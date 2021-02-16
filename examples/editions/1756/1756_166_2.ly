@@ -17,6 +17,14 @@
 
   |
 
-  \custos g
+\criticalRemark "Im Druck nur Kustos auf g'."
+{
+  g8 [ b, c d ]
 
+  |
+
+  g,4 r
+
+  \doubleBar
+}
 }
