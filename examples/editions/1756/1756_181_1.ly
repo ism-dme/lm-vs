@@ -19,11 +19,7 @@ one = \relative {
   d8 [ d d ]
 
   d8. [ cis32 -3 
-  \criticalRemark \with {
-    message = "Im Druck h''"
-    item = Accidental
-  }
-  bes -2 a8 -1 ]
+  b -2 a8 -1 ]
 
   \doubleBar
 }
