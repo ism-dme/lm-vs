@@ -21,7 +21,7 @@
     g16
     -\criticalRemark "Strich fehlt im Druck."
     \strich [ f e d c b ) ]
-  }
+  
 
   |
 
@@ -29,7 +29,8 @@
                    Möglich wäre auch, dass das Beispiel bewusst im schnelleren Metrum
                    gesetzt wurde, dann wäre allerdings der letzte Takt in drei
                    Viertelwerte zu korrigieren"
-  c'8 r r
+   c8  r r
 
   \doubleBar
+
 }

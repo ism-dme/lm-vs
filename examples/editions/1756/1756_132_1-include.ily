@@ -10,3 +10,4 @@
 
 \mod 2 0/4 \stemDown
 \mod 3 0/4 \stemUp
+%\mod 4 0/8 \once \omit Staff.TimeSignature
