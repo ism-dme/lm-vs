@@ -10,10 +10,13 @@
 \layout {
   \context {
     \Voice
-    \override Script.padding = 1
+    \override Script.padding = 2
   }
   \context {
     \Staff
-    \omit TimeSignature
+%    \omit TimeSignature
   }
 }
+
+\mod 1 1/2 \omit Staff.TimeSignature
+\mod 1 0/2   \once \override Script.padding = 3
