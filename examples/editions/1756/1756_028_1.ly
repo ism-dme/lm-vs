@@ -5,6 +5,8 @@
 \version "2.19.81"
 \include "../../library/init-edition.ily"
 
+\setOption scholarly.choice.preferences.variants "1769"
+
 \relative {
   \measureBracket "Das gleiche Zeitmaas." {
 
@@ -28,9 +30,22 @@
 
     \showUnevenTimeSignature 3/4 \markup \center-column { "Der Drey-" "viertheiltact." }
     \doubleBar
-
+    
+    \choice variants {
+      \editorialMarkup reading \with {
+        source = "1756"
+      } {
     \showUnevenTimeSignature 3/8 \markup \center-column { "Der Drey-" "achttheil." }
     \doubleBar
+      }
+      \editorialMarkup reading \with {
+        source = "1769"
+      } {
+        \criticalRemark ""
+    \showUnevenTimeSignature 3/8 \markup \center-column { "Der Drey-" "achttheil." }
+    \doubleBar
+      }
+    }
 
     \showUnevenTimeSignature 6/4 \markup \center-column { "Der Sechs-" "viertheil." }
     \doubleBar

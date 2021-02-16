@@ -419,17 +419,7 @@
     "accepted": true,
     "rejected": false
   },
-  "1756_041_4": {
-    "basedon": "1756_041_4",
-    "relation": "equal",
-    "has_file": "1756/1756_041_4.ly",
-    "has_include": "1756/1756_041_4-include.ily",
-    "entered": true,
-    "review": false,
-    "accepted": true,
-    "rejected": false
-  },
-  "1756_041_5": {
+   "1756_041_5": {
     "basedon": "1756_041_5",
     "relation": "equal",
     "has_file": "1756/1756_041_5.ly",

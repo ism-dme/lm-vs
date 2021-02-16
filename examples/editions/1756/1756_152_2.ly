@@ -25,7 +25,9 @@
 
   |
 
-  d16 -2 [ ( cis -1 ) d8 -2 ] r4
+  d16 -2 [ 
+  - \criticalRemark "Bindung im Druck von der zweitewn zur dritten Noter."
+  ( cis -1 ) d8 -2 ] r4
 
   \doubleBar
 }

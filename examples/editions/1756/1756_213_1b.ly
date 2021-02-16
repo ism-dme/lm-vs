@@ -38,7 +38,9 @@ bassFigures = \figuremode {
 
   |
 
-  < 4 >8 < 3 > s < 6 5 > < 4 >4  < 3 >8 < 6 5 >
+  < 4 >8 < 3 > s < 6 5 > < 4 >4  
+  \criticalRemark "Im Druck keine 3."
+  < 3 >8 < 6 5 >
 }
 
 \loadTemplate two-systems

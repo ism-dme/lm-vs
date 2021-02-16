@@ -9,8 +9,7 @@
   \time 4/4
   \key bes \major
   d''32 ( [ c d c d c d c d c d c ] bes64 [ c bes c bes c ] 
-  c ^\t 
-  -\criticalRemark "Im Druck ein Balken zu wenig."
+  c32 ^\t 
   [ bes ] ) bes2
   
   \doubleBar
