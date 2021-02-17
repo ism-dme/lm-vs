@@ -22,7 +22,7 @@
     message = "Im Druck kein Auflösungszeichen"
     item = Accidental
   }
-  f! e
+  fis e
   \criticalRemark \with {
     message = "Im Druck kein Auflösungszeichen"
     item = Accidental
