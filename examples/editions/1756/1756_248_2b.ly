@@ -16,7 +16,12 @@
 
   c8.
   _"Herabgehender."
-  [ ( es16 ) ] es4. ( d32 [ c bes c ] )
+  [ ( es16 ) ] es4. ( d32 [ c 
+  \criticalRemark \with {
+    message = "Vorzeichen fwehlt im Druck."
+    item = Accidental
+  }
+  bes! c ] )
 
   |
 
