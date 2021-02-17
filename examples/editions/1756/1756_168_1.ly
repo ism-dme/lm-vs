@@ -11,7 +11,7 @@
   \key c \major
 
   r16 g'' -1 
-  _"Halbe Applicatur."
+  _"halbe Applicatur."
   [ a -2 b -3 ]
 
   |
@@ -21,7 +21,7 @@
   |
 
   a'8 -2 [ c, -1 ] f,16 -1 [ a' -1
-  _"Ganze Applicatur."
+  _"ganze Applicatur."
   b16 cis ]
 
   |
@@ -30,7 +30,7 @@
 
   |
 
-  b'8 [ d, ] g,16 [ b' -1 _"Halbe." cis dis ]
+  b'8 [ d, ] g,16 [ b' -1 _"halbe." cis dis ]
 
   \originalBreak
   |
@@ -39,7 +39,7 @@
 
   |
 
-  c'8 [ e, ] a,16 [ c' -1 _"Ganze." d e ]
+  c'8 [ e, ] a,16 [ c' -1 _"ganze." d e ]
 
   |
 
@@ -47,7 +47,7 @@
 
   |
 
-  d'8 [ f, ] b,16 [ d' -1 _"Halbe." e fis ]
+  d'8 [ f, ] b,16 [ d' -1 _"halbe." e fis ]
 
   |
 
@@ -64,21 +64,21 @@
 
   |
 
-  c8 -1 _"Ganze." [ f16 e ] f8 [ c -1 ]
+  c8 -1 _"ganze." [ f16 e ] f8 [ c -1 ]
 
   |
 
-  b8 -1 _"Halbe." [ e16 d ] e8 [ b -1 ]
+  b8 -1 _"halbe." [ e16 d ] e8 [ b -1 ]
 
   |
 
-  a8 -1 _"Ganze." [ d16 c ] d8 [ a -1
+  a8 -1 _"ganze." [ d16 c ] d8 [ a -1
   ]
 
   \originalBreak
   |
 
-  g8 -1 _"Halbe." [ c16 b] c8 [ f, -1 ]
+  g8 -1 _"halbe." [ c16 b] c8 [ f, -1 ]
 
   |
 
