@@ -11,38 +11,38 @@ space = s32
 \relative {
 
   \annotateClef
-  "C." ""
+  "C" ""
   \clef treble
 
-  <> ^\markup "Horn."
-  _\markup "(g)"
+  <> ^\markup "Horn"
+  _\markup "g"
   \custos g'
   \space
-  <> _\markup "(c)"
+  <> _\markup "c"
   \custosWithDoubleBar c
 
   \annotateClef "D." ""
   \customTrebleClef -3
-  <> _\markup "(g)"
+  <> _\markup "g"
   \custos g
   \space
-  <> _\markup "(d)"
+  <> _\markup "d"
   \custosWithDoubleBar d'
 
   \annotateClef "E." ""
   \customTrebleClef -4
-  <> _\markup "(g)"
+  <> _\markup "g"
   \custos g,
   \space
-  <> _\markup "(e)"
+  <> _\markup "e"
   \custosWithDoubleBar e'
 
   \annotateClef "F." ""
   \customTrebleClef -5
-  <> _\markup "(g)"
+  <> _\markup "g"
   \custos g,
   \space
-  <> _\markup "(f)"
+  <> _\markup "f"
   \custos f'
   \space
 
@@ -54,32 +54,32 @@ space = s32
 
   \barlineComment "oder"
   \customTrebleClef 2
-  <> _\markup "(g)"
+  <> _\markup "g"
   \custos g,
   \space
-  <> _\markup "(f)"
+  <> _\markup "f"
   \custosWithDoubleBar f
 
   \annotateClef "G." ""
   \customTrebleClef 1
-  <> _\markup "(g)"
+  <> _\markup "g"
   \custosWithDoubleBar g
 
   \annotateClef
   "A." ""
   \customTrebleClef 0
-  <> _\markup "(g)"
+  <> _\markup "g"
   \custos g
   \space
-  <> _\markup "(a)"
+  <> _\markup "a"
   \custosWithDoubleBar a
 
   \annotateClef
   "B." ""
   \customTrebleClef -1
-  <> _\markup "(g)"
+  <> _\markup "g"
   \custos g
   \space
-  <> _\markup "(b)"
+  <> _\markup "b"
   \custosWithDoubleBar b
 }
