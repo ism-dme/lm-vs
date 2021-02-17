@@ -6,6 +6,7 @@
 \include "../../library/init-edition.ily"
 
 \relative {
+  \criticalRemark ""
   \tempo "Adagio."
   \criticalRemark "Im Druck keine Taktangabe"
   \time 2/4
