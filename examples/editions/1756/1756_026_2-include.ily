@@ -5,7 +5,7 @@
 %}
 
 % Combine a "b" with a natural"
-bNatural = ^\markup { (b \hspace #-0.25 \raise #0.5 \fontsize #-1 \natural \hspace #-0.25 ) }
+bNatural = ^\markup { b \hspace #-0.25 \raise #0.5 \fontsize #-1 \natural \hspace #-0.25 }
 
 \setOption mozart.measure-brackets.staff-padding 4.5
 
