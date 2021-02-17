@@ -8,7 +8,7 @@
 \setOption scholarly.choice.preferences.variants "1769"
 
 \relative {
-  \measureBracket "Das gleiche Zeitmaas." {
+  \measureBracket "Das gleiche Zeitmaaß." {
 
     \doubleBar
     \showEvenTimeSignature "4/4" "Der gerade oder Vierviertheiltact."
@@ -21,7 +21,7 @@
     \doubleBar
   }
   \break
-  \measureBracket "Das ungleiche Zeitmaas." {
+  \measureBracket "Das ungleiche Zeitmaaß." {
     \showUnevenTimeSignature 3/1 \markup \center-column { "Der ganze" "Tripel." }
     \doubleBar
 
