@@ -6,7 +6,7 @@
 \include "../../library/init-edition.ily"
 
 {
-  \annotatedNoteHead c'' \longa*1/4 "Eine lange," "Longa."
+  \annotatedNoteHead c'' \longa*1/4 "eine lange," "Longa."
   \annotatedNoteHead c'' \breve*1/2 "eine kurze," "Breve."
   \annotatedNoteHead c''1 "eine ganze," "Semibreve."
   \annotatedNoteHead c''2 "eine halbe," "Minima."
