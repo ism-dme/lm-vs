@@ -9,11 +9,11 @@ upper = \relative {
   \time 6/8
   \partial 8
   \key c \major
-  g''8 ^\ref "16."
+  g''8 ^\ref "16"
 
   |
 
-  e8 [ c ^\ref "32." d ] b [ g c ]
+  e8 [ c ^\ref "32" d ] b [ g c ]
 
   |
 
@@ -21,11 +21,11 @@ upper = \relative {
 
   |
 
-  c16 [ d e f g e ] a8 [ ^\ref "28." f, \strich ( e \strich ) ]
+  c16 [ d e f g e ] a8 [ ^\ref "28" f, \strich ( e \strich ) ]
 
   |
 
-  d8 [ ^\ref "9." a''16 g f a ] g8 [ e, d ]
+  d8 [ ^\ref "9" a''16 g f a ] g8 [ e, d ]
 
   |
 
@@ -51,7 +51,7 @@ lower = \relative {
 
   |
 
-  c'8 [ ^\ref "32." e f ] g [ b e, ]
+  c'8 [ ^\ref "32" e f ] g [ b e, ]
 
   |
 
@@ -59,7 +59,7 @@ lower = \relative {
 
   |
 
-  r8 c'16 [ ^\ref "6." d e c ] f4 r8
+  r8 c'16 [ ^\ref "6" d e c ] f4 r8
 
   |
 
@@ -71,7 +71,7 @@ lower = \relative {
 
   |
 
-  r8 d16 [ c b d ] c8 [ ^\ref "28." e, f ]
+  r8 d16 [ c b d ] c8 [ ^\ref "28" e, f ]
 
   |
 

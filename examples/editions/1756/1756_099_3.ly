@@ -8,7 +8,7 @@
 upper = \relative {
   \time 3/2
   \key c \major
-  c''2 ^\ref "28." e c
+  c''2 ^\ref "28" e c
 
   |
 
@@ -36,7 +36,7 @@ upper = \relative {
 
   |
 
-  r4 ^\ref "7." a' g f e d
+  r4 ^\ref "7" a' g f e d
 
   |
 
@@ -50,7 +50,7 @@ lower = \relative {
 
   |
 
-  g'2 ^\ref "28." b g
+  g'2 ^\ref "28" b g
 
   |
 

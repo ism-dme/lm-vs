@@ -8,7 +8,7 @@
 upper = \relative {
   \time 2/4
   \key c \major
-  r8 g' ^\ref "5." c4 (
+  r8 g' ^\ref "5" c4 (
 
   |
 
@@ -26,17 +26,17 @@ upper = \relative {
 
   |
 
-  a8 ) ^\ref "22." g4 ( f8 )
+  a8 ) ^\ref "22" g4 ( f8 )
 
   |
 
-  e16 [ ( ^\ref "17." d ) c8 ] r e (
-  ^\ref "16."
+  e16 [ ( ^\ref "17" d ) c8 ] r e (
+  ^\ref "16"
 
   |
   \originalBreak
 
-  e8 ) d4 ^\ref "27." g8 (
+  e8 ) d4 ^\ref "27" g8 (
 
   |
 
@@ -93,7 +93,7 @@ upper = \relative {
   |
   \originalPageBreak
 
-  b8 g4 ^\ref "24." f'!8
+  b8 g4 ^\ref "24" f'!8
 
   |
 
@@ -112,7 +112,7 @@ upper = \relative {
 }
 
 lower = \relative {
-  c'4 ^\ref "5." r8 e16 [ ( f ] )
+  c'4 ^\ref "5" r8 e16 [ ( f ] )
 
   |
 
@@ -128,7 +128,7 @@ lower = \relative {
 
   |
 
-  c,8 [ ^\ref "17." c16 ( d ) ] e8 [ c' ]
+  c,8 [ ^\ref "17" c16 ( d ) ] e8 [ c' ]
 
   |
   \originalBreak
@@ -137,7 +137,7 @@ lower = \relative {
 
   |
 
-  d8 ^\ref "24." d'4 fis,8
+  d8 ^\ref "24" d'4 fis,8
 
   |
 
@@ -177,7 +177,7 @@ lower = \relative {
   |
   \originalPageBreak
 
-  g8 b4 ( ^\ref "24." g8 )
+  g8 b4 ( ^\ref "24" g8 )
 
   |
 

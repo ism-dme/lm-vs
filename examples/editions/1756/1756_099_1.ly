@@ -13,11 +13,11 @@
 
   |
 
-  a8 [ ^\ref "28." f, \strich ( e \strich ) ]
+  a8 [ ^\ref "28" f, \strich ( e \strich ) ]
 
   |
 
-  d8 [ a''16 ( ^\ref "35." g ) f \strich a \strich ]
+  d8 [ a''16 ( ^\ref "35" g ) f \strich a \strich ]
 
   |
 

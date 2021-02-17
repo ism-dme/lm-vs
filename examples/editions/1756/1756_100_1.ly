@@ -24,7 +24,7 @@ upper = \relative {
 
   |
 
-  g1 ^\ref "28." f e
+  g1 ^\ref "28" f e
 
   |
 
@@ -66,7 +66,7 @@ lower = \relative {
 
   |
 
-  e1 ^\ref "28." d c
+  e1 ^\ref "28" d c
 
   |
 

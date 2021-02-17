@@ -31,7 +31,7 @@ upper = \relative {
 
   |
 
-  f2. ^\ref "17." g8 [ f ]
+  f2. ^\ref "17" g8 [ f ]
 
   |
   \originalPageBreak
@@ -40,7 +40,7 @@ upper = \relative {
 
   |
 
-  d4 ^\ref "17." e8 [ ( f ] ) g [ f e d ]
+  d4 ^\ref "17" e8 [ ( f ] ) g [ f e d ]
 
   |
 
@@ -91,7 +91,7 @@ lower = \relative {
 
   |
 
-  c2 r4 e, ^\ref "7."
+  c2 r4 e, ^\ref "7"
 
   |
 

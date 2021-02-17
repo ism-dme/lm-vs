@@ -8,7 +8,7 @@
 upper = \relative {
   \time 3/8
   \key c \major
-  c''8 [ e ^\strich ( ^\ref "28." f ^\strich ) ]
+  c''8 [ e ^\strich ( ^\ref "28" f ^\strich ) ]
 
   |
 
@@ -32,15 +32,15 @@ upper = \relative {
 
   |
 
-  g8 [ ( ^\ref "29." a ) fis ]
+  g8 [ ( ^\ref "29" a ) fis ]
 
   |
 
-  g8 [ g, \strich ( ^\ref "29." f'! \strich ) ]
+  g8 [ g, \strich ( ^\ref "29" f'! \strich ) ]
 
   |
 
-  e8 [ ^\ref "28." c b ]
+  e8 [ ^\ref "28" c b ]
 
   |
 
@@ -62,7 +62,7 @@ lower = \relative {
 
   |
 
-  g'8 [ ^\ref "28." a b ]
+  g'8 [ ^\ref "28" a b ]
 
   |
 
@@ -94,7 +94,7 @@ lower = \relative {
 
   |
 
-  c8 [ c'16 ( ^\ref "35." d ) e \strich d \strich ]
+  c8 [ c'16 ( ^\ref "35" d ) e \strich d \strich ]
 
   |
 

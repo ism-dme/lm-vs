@@ -15,7 +15,7 @@ upper = \relative {
 
     |
 
-    r16 ^\ref "5." c [ e f ] g [ d b g ]
+    r16 ^\ref "5" c [ e f ] g [ d b g ]
 
     |
 
@@ -59,7 +59,7 @@ upper = \relative {
 
     |
 
-    e16 [  ^\ref "23." g8 b,16 ] c8 [ f, ]
+    e16 [  ^\ref "23" g8 b,16 ] c8 [ f, ]
 
     |
 
@@ -87,15 +87,15 @@ lower = \relative {
 
     |
 
-    g4 b,16 ^\ref "9." [ a b g ]
+    g4 b,16 ^\ref "9" [ a b g ]
 
     |
 
-    c4 r8 ^\ref "5." a'
+    c4 r8 ^\ref "5" a'
 
     |
 
-    g8 [ g,16 ^\ref "17." a ] b8 [ g ]
+    g8 [ g,16 ^\ref "17" a ] b8 [ g ]
   }
   \repeat volta 2 {
     c4 r16 c [ d e ]

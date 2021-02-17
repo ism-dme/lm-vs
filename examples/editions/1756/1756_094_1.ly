@@ -8,7 +8,7 @@
 upper = \relative {
   \time 3/4
   \key c \major
-  r8 ^\ref "5." c'' [ r d r e ]
+  r8 ^\ref "5" c'' [ r d r e ]
 
   |
 
@@ -43,7 +43,7 @@ upper = \relative {
 
   |
   \bar ":..:"
-  r8 bes'4 ^\ref "27." a g8
+  r8 bes'4 ^\ref "27" a g8
 
   |
 
@@ -87,7 +87,7 @@ lower = \relative {
 
   |
 
-  g4 r g16 [ ^\ref "9." a b a ]
+  g4 r g16 [ ^\ref "9" a b a ]
 
   |
 
@@ -109,7 +109,7 @@ lower = \relative {
   |
   \originalBreak
 
-  r8 ^\ref "5." c, [ r d r d ]
+  r8 ^\ref "5" c, [ r d r d ]
 
   |
 
@@ -117,7 +117,7 @@ lower = \relative {
 
   |
 
-  cis4 ^\ref "28." cis cis
+  cis4 ^\ref "28" cis cis
 
   |
 
@@ -138,7 +138,7 @@ lower = \relative {
 
   |
 
-  g8 [ g,16 ^\ref "17." a ] b8 [ b g g ]
+  g8 [ g,16 ^\ref "17" a ] b8 [ b g g ]
 
   |
   \originalBreak

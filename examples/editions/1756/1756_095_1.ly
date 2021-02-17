@@ -10,21 +10,21 @@ upper = \relative {
   \time 4/4
   \key c \major
   g''32 [ (
-  ^\ref "15."
+  ^\ref "15"
   e16. ) d32 ( c16. ) ]
   b32 [ ( c16. )  b32 ( c16. ) ] g4
-  d'16. [ ^\ref "14." e32 f16. d32 ]
+  d'16. [ ^\ref "14" e32 f16. d32 ]
 
   |
 
-  e16. [ ^\ref "13." f32 g16. e32 ]
+  e16. [ ^\ref "13" f32 g16. e32 ]
   b16. [ c32 d16. b32 ]
   \originalBreak
   c8 [ g ] d' [ b16 ( g ] )
 
   |
 
-  e'4 ^\ref "11." fis8. [ d16 ]  g4 d8. [ b16 ]
+  e'4 ^\ref "11" fis8. [ d16 ]  g4 d8. [ b16 ]
 
   |
 
@@ -34,7 +34,7 @@ upper = \relative {
   \originalBreak
   \bar ":..:"
 
-  g'4 ^\ref "12." e16 [ ( cis8. ] ) d4 e16. [ ^\ref "14." f32 g16. e32 ]
+  g'4 ^\ref "12" e16 [ ( cis8. ] ) d4 e16. [ ^\ref "14" f32 g16. e32 ]
 
   |
 
@@ -52,7 +52,7 @@ upper = \relative {
 
   |
 
-  a4 b!8. [ ^\ref "11." g16 ] c4 g'8. [ bes,16 ]
+  a4 b!8. [ ^\ref "11" g16 ] c4 g'8. [ bes,16 ]
 
   |
   \originalBreak
@@ -68,19 +68,19 @@ upper = \relative {
 }
 
 lower = \relative {
-  c'4 r r8 e16 [ (  ^\ref "5." c ] ) b8 [ g ]
+  c'4 r r8 e16 [ (  ^\ref "5" c ] ) b8 [ g ]
 
   |
 
-  c8 [ e16. ^\ref "17." c32 ] g'8 [ f ]
+  c8 [ e16. ^\ref "17" c32 ] g'8 [ f ]
 
   \originalBreak
 
-  e4 b8 [ ^\ref "9." g ]
+  e4 b8 [ ^\ref "9" g ]
 
   |
 
-  c8. [ a16 ] d4 e8. [ ^\ref "4." c16 ] b8 [ g ]
+  c8. [ a16 ] d4 e8. [ ^\ref "4" c16 ] b8 [ g ]
 
   |
 
@@ -89,12 +89,12 @@ lower = \relative {
   |
   \originalPageBreak
 
-  r g' ^\ref "8." f8 [ d ] cis [ a ]
+  r g' ^\ref "8" f8 [ d ] cis [ a ]
 
   |
 
-  d8 [ ^\ref "17." f16 ( g ) ] a8 [ g ]
-  f4 b,8 [ ^\ref "9.) oder (10." g ]
+  d8 [ ^\ref "17" f16 ( g ) ] a8 [ g ]
+  f4 b,8 [ ^\ref "9) oder (10" g ]
 
   |
   \originalBreak
@@ -103,7 +103,7 @@ lower = \relative {
 
   |
 
-  f8. [ d16 ] g4 a8. [ ^\ref "4." f16 ] e8 [ c ]
+  f8. [ d16 ] g4 a8. [ ^\ref "4" f16 ] e8 [ c ]
 
   |
   \originalBreak
