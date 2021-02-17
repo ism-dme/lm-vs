@@ -91,7 +91,7 @@ lower = \relative {
 
   |
 
-  r8 ^\ref "5." c' [ c c, ] b [ b b b ]
+  r8 ^\ref "5" c' [ c c, ] b [ b b b ]
 
   |
 
@@ -107,7 +107,7 @@ lower = \relative {
 
   |
 
-  c4. ^\ref "3." cis8 d4 r
+  c4. ^\ref "3" cis8 d4 r
 
   |
 
