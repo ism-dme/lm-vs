@@ -12,7 +12,9 @@
   \time 3/4
   \criticalRemark "Im Druck neben dem vorigen Beispiel, daher keine Tonartvorzeichnung"
   \key d \major
-  \tuplet 3/2 { a''8 [ ( fis d ) ] } d4. \f ( c8 \p )
+  \tuplet 3/2 { a''8 [ ( fis d ) ] } d4. 
+  \criticalRemark "Im Druck 'f' bei d'' und 'p' bei c''"
+  \fp ( c8 )
 
   |
 
