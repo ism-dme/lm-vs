@@ -40,7 +40,7 @@ upper = \relative {
   |
 
   \originalBreak
-  a8 f'4 ( ^\ref "23." e8 ) f [ f, ] r4
+  a8 f'4 ( ^\ref "23" e8 ) f [ f, ] r4
 
   |
 
@@ -73,15 +73,15 @@ upper = \relative {
 
 lower = \relative {
   c'8 [ d e b ] c8 [
-  ^\ref "17."
+  ^\ref "17"
   e16 ( d ] ) c8 [ e' ]
 
   |
 
   r8
-  ^\ref "5."
+  ^\ref "5"
   e, [ c e ] f f4 (
-  ^\ref "24."
+  ^\ref "24"
   f8 )
 
   |
@@ -92,7 +92,7 @@ lower = \relative {
 
   |
 
-  d16 [ ^\ref "2." e fis g ] a [ fis e d ] g8 [ b, 
+  d16 [ ^\ref "2" e fis g ] a [ fis e d ] g8 [ b, 
   \criticalRemark \with {
     message = "Im Druck kein Auflösungszeichen"
     item = Accidental
