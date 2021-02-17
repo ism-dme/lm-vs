@@ -12,7 +12,7 @@
 
   |
 
-  cis \asterisk \t ( c \t
+  cis _\asterisk \t ( c \t
 
   |
 
@@ -21,6 +21,21 @@
   |
 
   a2
+
+
+  d,4 a'
+
+  |
+
+  bes4 \asterisk \t ( b \t
+
+  |
+
+  c \asterisk \t cis \t )
+
+  |
+
+  d2
 
   \doubleBar
 }
