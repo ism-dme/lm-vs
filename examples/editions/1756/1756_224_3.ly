@@ -33,10 +33,6 @@ upper = \relative {
 
   |
 
-  \criticalRemark \with {
-    message = "Im Druck kein Kreuz"
-    item = Accidental
-  }
   gis2 \t
 
   |
