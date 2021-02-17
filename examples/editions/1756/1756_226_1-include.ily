@@ -13,6 +13,11 @@
     \Voice
     \override TextScript.staff-padding = 2
   }
+  \context {
+      \Score
+      \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/32)
+    }
+  }
 }
 
 \setOption mozart.markup-staff-padding 4
