@@ -10,7 +10,8 @@
   \clef treble
   d'4
   _"Auf der (G) Seyte."
-  ^\fingerPlain 0 "3. Finger"
+   -\criticalRemark ""
+   ^\fingerPlain 0 "3. Finger"
   ^(
   d
   ^\fingerPlain 0 "leer"
@@ -19,7 +20,8 @@
   \doubleBar
 
   a'4
-  ^\fingerPlain 0 "3. Finger"
+  -\criticalRemark ""
+   ^\fingerPlain 0 "3. Finger"
   _"Auf dem (D)."
   ^(
   a
