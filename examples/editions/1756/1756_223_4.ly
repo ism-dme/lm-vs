@@ -14,6 +14,12 @@ upper = \relative {
 
   g4. \t ( fis16 [ g ] ) fis2
 
+  b2 \t a
+
+  |
+
+  b4. \t ( a16 [ b ] ) a2
+
   \doubleBar
 }
 
@@ -24,6 +30,14 @@ lower = \relative {
 
   |
 
+  g,2 d'
+  
+  |
+  
+  g2 d'
+  
+  |
+  
   g,2 d'
 }
 
