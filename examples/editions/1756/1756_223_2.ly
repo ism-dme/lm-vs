@@ -6,7 +6,7 @@
 \include "../../library/init-edition.ily"
 
 \relative {
-  \criticalRemark "Im Dtruck keine Taktangabe."
+  \criticalRemark "Im Druck keine Taktangabe."
   \time 4/4
   \key a \major
   b'2 \t  \fermata a
