@@ -22,3 +22,6 @@
 
 \mod 1 25/32 \set stemRightBeamCount = 3
 \mod 1 26/32 \set stemLeftBeamCount = 3
+\mod 2 0 4 \set stemRightBeamCount = 5
+\mod 2 0 8 \set baseMoment = #(ly:make-moment 1/8)
+\mod 2 0/8 \set subdivideBeams = ##f
