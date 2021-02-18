@@ -3889,11 +3889,21 @@
     "accepted": true,
     "rejected": false
   },
-  "1756_178_1": {
-    "basedon": "1756_178_1",
+  "1756_178_1a": {
+    "basedon": "1756_178_1a",
     "relation": "equal",
-    "has_file": "1756/1756_178_1.ly",
-    "has_include": "1756/1756_178_1-include.ily",
+    "has_file": "1756/1756_178_1a.ly",
+    "has_include": "1756/1756_178_1a-include.ily",
+    "entered": true,
+    "review": false,
+    "accepted": true,
+    "rejected": false
+  },
+  "1756_178_1b": {
+    "basedon": "1756_178_1b",
+    "relation": "equal",
+    "has_file": "1756/1756_178_1b.ly",
+    "has_include": "1756/1756_178_1b-include.ily",
     "entered": true,
     "review": false,
     "accepted": true,
