@@ -16,7 +16,7 @@
   \annotatedNoteHead c''4 "eine Viertheilnote," "Semiminima."
   \annotatedNoteHead c''8 "eine einfache Fuselle," "Croma."
   \annotatedNoteHead c''16 "eine doppelte," "Semicroma."
-  \annotatedNoteHead c''32 "eine dreyfache." "Biscroma."
+  \criticalRemark "" \annotatedNoteHead c''32 "eine dreyfache." "Biscroma."
 
   \doubleBar
 }
