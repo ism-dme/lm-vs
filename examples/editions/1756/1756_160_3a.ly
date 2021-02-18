@@ -1,5 +1,5 @@
 %{
-  Leopold Mozart: Violin School (1756) - Example 1756_160_3
+  Leopold Mozart: Violin School (1756) - Example 1756_172_3
 %}
 
 \version "2.19.81"
@@ -7,31 +7,30 @@
 
 \relative {
   \time 2/4
-  \partial 8
-  \key g \major
-  b'8
+  \partial 4
+  \key a \major
+  r16 a' [ cis e ]
 
   |
 
-  e16 [ ( g )  fis ( e ) ] fis [ ( a ) g ( fis ) ]
+  a -3 [ a, cis e ] cis' -3 [ a, cis e ]
 
   |
 
-  g16 -1 \asterisk [ ( b -3 ) a -2 ( g -1 ) ]
-  a16 -2 \asterisk [ c -4 b -3 a -2 ]
+  e'16 -3 [ a,, cis e ] a'4
+
+  \doubleBar
+  \barlineComment "oder"
+  \partial 4
+  r16 a,, [ cis e ]
 
   |
 
-  b8 -1 [ c16 -2 d -3 ] e8 -4 [ a, -4 ]
+  a16 -3 [ a, cis e ] cis' -4 [ a, cis e ]
 
   |
 
-  \originalBreak
-  g8 -3 [ e' -4 fis, -2 dis' -3 ]
-
-  |
-
-  e4 -4 r
+  e'16 -4 [ a,, cis e ] a'4 -4
 
   \doubleBar
 
