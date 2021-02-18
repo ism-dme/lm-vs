@@ -79,7 +79,11 @@ space = s32
   \customTrebleClef -1
   <> _\markup "g"
   \custos g
-  \space
-  <> _\markup "b"
+  \space \space
+  \criticalRemark \with {
+    message = "Im Druck »b«."
+    item = TextScript
+  }
+   _"h" 
   \custosWithDoubleBar b
 }

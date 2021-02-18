@@ -379,11 +379,21 @@
     "accepted": true,
     "rejected": false
   },
-  "1756_040_2": {
+  "1756_040_2a": {
     "basedon": "1756_040_2",
     "relation": "equal",
-    "has_file": "1756/1756_040_2.ly",
-    "has_include": "1756/1756_040_2-include.ily",
+    "has_file": "1756/1756_040_2a.ly",
+    "has_include": "1756/1756_040_2a-include.ily",
+    "entered": true,
+    "review": false,
+    "accepted": true,
+    "rejected": false
+  },
+  "1756_040_2b": {
+    "basedon": "1756_040_2b",
+    "relation": "equal",
+    "has_file": "1756/1756_040_2b.ly",
+    "has_include": "1756/1756_040_2b-include.ily",
     "entered": true,
     "review": false,
     "accepted": true,
