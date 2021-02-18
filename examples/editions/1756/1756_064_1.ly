@@ -101,10 +101,12 @@ upper = {
       above = \markup \center-column { "Die abgekürzte oder" \Xg "verkleinerte." }
       below = \markup \sans "7 Diminuta."
     } bes'1
+    \criticalRemark ""
     \annotateCenteredMusic \with {
       above = "Die kleinere."
       below = \markup \sans "7 Minor."
     } bes'1
+    \criticalRemark ""
     \annotateCenteredMusic \with {
       above = "Die grössere."
       below = \markup \sans "7 Major."
