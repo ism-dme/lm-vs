@@ -57,6 +57,7 @@ current_example =
 % NOTE: This hasn't been strictly encoded yet :-(
 \loadModule scholarly.diplomatic-line-breaks
 
+\include "internal/style-reading.ily
 % edition-engraver
 % apply tweaks from include files
 %
