@@ -6,6 +6,7 @@
 \include "../../library/init-edition.ily"
 
 \setOption scholarly.choice.preferences.variants "1756"
+\setOption scholarly.choice.preferences.version "1756-1769"
 
 \relative {
   \time 2/4
