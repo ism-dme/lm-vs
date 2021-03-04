@@ -88,7 +88,7 @@ upper = {
 
   \noteName "Semiminima." {
     \annotateCenteredMusic \with {
-      above = \markup \center-column { "Die Viertheilnote." "Gilt iede ein Viertheil." }
+      above = \markup \center-column { "Die Viertheilnote." "Gilt jede ein Viertheil." }
       below = "Gehen 4 auf den geraden Tact."
     }
     \relative {
@@ -120,7 +120,7 @@ upper = {
   \noteName "Semicroma." {
     \annotateCenteredMusic \with {
       above = \markup {
-        Die doppelte Fuselle oder Sechzehntheilnote. \hspace #2 Gehen 4 auf ein Viertheil.
+        Die doppelte Fuselle oder Sechzehentheilnote. \hspace #2 Gehen 4 auf ein Viertheil.
       }
       below = "Gehen 16 auf den ganzen Tact."
     }
