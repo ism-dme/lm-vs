@@ -15,3 +15,5 @@
     \override Slur.minimum-length = 0
   }
 }
+
+%\mod 2 #(ly:make-moment 0 4 -1 4) \shape #'(0 . 0) (0 . 0) (0 . 5) (0 . 0) Slur

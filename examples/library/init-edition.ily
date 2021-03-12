@@ -80,6 +80,8 @@ current_example =
 % register global options, set defaults,
 % then load file with user overrides
 \include "internal/options.ily"
+\include "internal/variants.ily"
+
 \include "config.ily"
 
 % "install" the edition-engraver targets that should be used
