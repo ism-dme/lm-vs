@@ -55,3 +55,5 @@
 % This can be used to force grobs to different common baselines
 % depending on the direction.
 \registerOption mozart.staff-padding-by-direction ##f
+
+\registerOption scholarly.choice.preferences.edition "1756"
